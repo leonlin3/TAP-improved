@@ -1,0 +1,1632 @@
+nohup: ignoring input
+Can not use cuDNN on context None: cannot compile with cuDNN. We got this error:
+/tmp/try_flags_l7qQTF.c:4:10: fatal error: cudnn.h: No such file or directory
+ #include <cudnn.h>
+          ^~~~~~~~~
+compilation terminated.
+
+Mapped name None to device cuda1: GeForce GTX 1080 Ti (0000:02:00.0)
+{'use-dropout': [False], 'learning-rate': [1e-08], 'optimizer': ['adadelta'], 'dim_word': [256], 'reload': [False], 'dim_enc': [250, 250, 250, 250], 'alphas-gamma': [0.1], 'dim_target': [111], 'maxlen': [400], 'dim_coverage': [121], 'clip-c': [1000.0], 'model': ['models/attention_maxlen[400]_dimWord256_dim256.npz'], 'dim_dec': [256], 'down_sample': [0, 0, 1, 1], 'dim_feature': [9], 'decay-c': [0.0]}
+total words/phones 111
+Loading data
+total  1105 batch data loaded
+total  124 batch data loaded
+Building model
+Buliding sampler
+Building f_init...WARNING (theano.gof.compilelock): Overriding existing lock by dead process '14013' (I am process '14422')
+ Done
+Building f_next.. Done
+Building f_log_probs... Done
+Building f_cost... Done
+Computing gradient... Done
+Building optimizers... Done
+Model params:
+['Wemb_dec',
+ 'decoder_U',
+ 'decoder_U_att',
+ 'decoder_U_nl',
+ 'decoder_U_when_att',
+ 'decoder_Umg',
+ 'decoder_Ux',
+ 'decoder_Ux_nl',
+ 'decoder_W',
+ 'decoder_W_comb_att',
+ 'decoder_W_m_att',
+ 'decoder_Wc',
+ 'decoder_Wc_att',
+ 'decoder_Wcx',
+ 'decoder_Whg',
+ 'decoder_Wx',
+ 'decoder_Wyg',
+ 'decoder_b',
+ 'decoder_b_att',
+ 'decoder_b_nl',
+ 'decoder_bhg',
+ 'decoder_bx',
+ 'decoder_bx_nl',
+ 'decoder_byg',
+ 'decoder_c_tt',
+ 'decoder_c_when_att',
+ 'decoder_conv_Q',
+ 'decoder_conv_Uf',
+ 'decoder_conv_b',
+ 'encoder0_U',
+ 'encoder0_Ux',
+ 'encoder0_W',
+ 'encoder0_Wx',
+ 'encoder0_b',
+ 'encoder0_bx',
+ 'encoder1_U',
+ 'encoder1_Ux',
+ 'encoder1_W',
+ 'encoder1_Wx',
+ 'encoder1_b',
+ 'encoder1_bx',
+ 'encoder2_U',
+ 'encoder2_Ux',
+ 'encoder2_W',
+ 'encoder2_Wx',
+ 'encoder2_b',
+ 'encoder2_bx',
+ 'encoder3_U',
+ 'encoder3_Ux',
+ 'encoder3_W',
+ 'encoder3_Wx',
+ 'encoder3_b',
+ 'encoder3_bx',
+ 'encoder_r0_U',
+ 'encoder_r0_Ux',
+ 'encoder_r0_W',
+ 'encoder_r0_Wx',
+ 'encoder_r0_b',
+ 'encoder_r0_bx',
+ 'encoder_r1_U',
+ 'encoder_r1_Ux',
+ 'encoder_r1_W',
+ 'encoder_r1_Wx',
+ 'encoder_r1_b',
+ 'encoder_r1_bx',
+ 'encoder_r2_U',
+ 'encoder_r2_Ux',
+ 'encoder_r2_W',
+ 'encoder_r2_Wx',
+ 'encoder_r2_b',
+ 'encoder_r2_bx',
+ 'encoder_r3_U',
+ 'encoder_r3_Ux',
+ 'encoder_r3_W',
+ 'encoder_r3_Wx',
+ 'encoder_r3_b',
+ 'encoder_r3_bx',
+ 'ff_logit_W',
+ 'ff_logit_b',
+ 'ff_logit_ctx_W',
+ 'ff_logit_ctx_b',
+ 'ff_logit_lstm_W',
+ 'ff_logit_lstm_b',
+ 'ff_logit_prev_W',
+ 'ff_logit_prev_b',
+ 'ff_state_W',
+ 'ff_state_b']
+Optimization
+Epoch  0 Update  100 Cost  90.5633850098 UD  0.504054240386 epson  1e-08 bad_counter 0
+Epoch  0 Update  200 Cost  50.3546562195 UD  0.508099583785 epson  1e-08 bad_counter 0
+Epoch  0 Update  300 Cost  37.9809341431 UD  0.550921452045 epson  1e-08 bad_counter 0
+Epoch  0 Update  400 Cost  46.8595275879 UD  0.484484092395 epson  1e-08 bad_counter 0
+Epoch  0 Update  500 Cost  56.6678962708 UD  0.526673686504 epson  1e-08 bad_counter 0
+Epoch  0 Update  600 Cost  15.2647981644 UD  1.09270346165 epson  1e-08 bad_counter 0
+Epoch  0 Update  700 Cost  38.1419372559 UD  4.58797720671 epson  1e-08 bad_counter 0
+Epoch  0 Update  800 Cost  97.239654541 UD  4.67197552125 epson  1e-08 bad_counter 0
+Epoch  0 Update  900 Cost  64.6554489136 UD  2.005846409 epson  1e-08 bad_counter 0
+Epoch  0 Update  1000 Cost  33.11378479 UD  0.534248789152 epson  1e-08 bad_counter 0
+Epoch  0 Update  1100 Cost  16.7722454071 UD  0.472492388884 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  17.3123637637
+Valid WER: 94.99%, SACC: 0.00%
+Seen 8835 samples
+Epoch  1 Update  1200 Cost  34.8421783447 UD  0.513642243544 epson  1e-08 bad_counter 0
+Epoch  1 Update  1300 Cost  11.6888713837 UD  0.510071468353 epson  1e-08 bad_counter 0
+Epoch  1 Update  1400 Cost  50.2257080078 UD  0.548203881582 epson  1e-08 bad_counter 0
+Epoch  1 Update  1500 Cost  53.1193656921 UD  0.4910912474 epson  1e-08 bad_counter 0
+Epoch  1 Update  1600 Cost  48.9543495178 UD  0.509947832425 epson  1e-08 bad_counter 0
+Epoch  1 Update  1700 Cost  43.3814544678 UD  0.521703318755 epson  1e-08 bad_counter 0
+Epoch  1 Update  1800 Cost  36.5451889038 UD  0.528945481777 epson  1e-08 bad_counter 0
+Epoch  1 Update  1900 Cost  3.87916564941 UD  0.491734234492 epson  1e-08 bad_counter 0
+Epoch  1 Update  2000 Cost  20.2941322327 UD  0.472879862785 epson  1e-08 bad_counter 0
+Epoch  1 Update  2100 Cost  65.2948760986 UD  0.52468619744 epson  1e-08 bad_counter 0
+Epoch  1 Update  2200 Cost  33.8118286133 UD  0.536903886 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.89400956631
+Valid WER: 66.06%, SACC: 0.41%
+Seen 8835 samples
+Epoch  2 Update  2300 Cost  38.6864700317 UD  0.510396206379 epson  1e-08 bad_counter 0
+Epoch  2 Update  2400 Cost  35.0065956116 UD  0.520160082976 epson  1e-08 bad_counter 0
+Epoch  2 Update  2500 Cost  11.0426702499 UD  0.508691410224 epson  1e-08 bad_counter 0
+Epoch  2 Update  2600 Cost  44.5158538818 UD  0.505693630377 epson  1e-08 bad_counter 0
+Epoch  2 Update  2700 Cost  29.2135162354 UD  0.480984882514 epson  1e-08 bad_counter 0
+Epoch  2 Update  2800 Cost  14.3386363983 UD  0.589341982206 epson  1e-08 bad_counter 0
+Epoch  2 Update  2900 Cost  30.0747489929 UD  0.531532096863 epson  1e-08 bad_counter 0
+Epoch  2 Update  3000 Cost  18.7483215332 UD  0.483382729689 epson  1e-08 bad_counter 0
+Epoch  2 Update  3100 Cost  6.23043632507 UD  0.502392935753 epson  1e-08 bad_counter 0
+Epoch  2 Update  3200 Cost  24.9522285461 UD  0.4583877484 epson  1e-08 bad_counter 0
+Epoch  2 Update  3300 Cost  7.2624168396 UD  0.516149751345 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.90859816869
+Valid WER: 51.14%, SACC: 4.77%
+Seen 8835 samples
+Epoch  3 Update  3400 Cost  6.19469833374 UD  0.520055898031 epson  1e-08 bad_counter 0
+Epoch  3 Update  3500 Cost  2.93578004837 UD  0.488982582092 epson  1e-08 bad_counter 0
+Epoch  3 Update  3600 Cost  11.9667901993 UD  0.531973743439 epson  1e-08 bad_counter 0
+Epoch  3 Update  3700 Cost  25.977558136 UD  0.506135249138 epson  1e-08 bad_counter 0
+Epoch  3 Update  3800 Cost  19.086605072 UD  0.519333326817 epson  1e-08 bad_counter 0
+Epoch  3 Update  3900 Cost  14.8791294098 UD  0.474425125122 epson  1e-08 bad_counter 0
+Epoch  3 Update  4000 Cost  15.8646259308 UD  0.540846172969 epson  1e-08 bad_counter 0
+Epoch  3 Update  4100 Cost  16.4195022583 UD  0.50757282575 epson  1e-08 bad_counter 0
+Epoch  3 Update  4200 Cost  12.8236351013 UD  0.53179564476 epson  1e-08 bad_counter 0
+Epoch  3 Update  4300 Cost  35.9260444641 UD  0.555004346371 epson  1e-08 bad_counter 0
+Epoch  3 Update  4400 Cost  6.49690914154 UD  0.460064359506 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.84805365006
+Valid WER: 30.91%, SACC: 13.89%
+Seen 8835 samples
+Epoch  4 Update  4500 Cost  6.99827957153 UD  0.519351696968 epson  1e-08 bad_counter 0
+Epoch  4 Update  4600 Cost  25.3242607117 UD  0.511940530936 epson  1e-08 bad_counter 0
+Epoch  4 Update  4700 Cost  8.99461746216 UD  0.520793282986 epson  1e-08 bad_counter 0
+Epoch  4 Update  4800 Cost  7.47300767899 UD  0.489342180888 epson  1e-08 bad_counter 0
+Epoch  4 Update  4900 Cost  5.57405567169 UD  0.513074938456 epson  1e-08 bad_counter 0
+Epoch  4 Update  5000 Cost  4.78632354736 UD  0.507530442874 epson  1e-08 bad_counter 0
+Epoch  4 Update  5100 Cost  13.3290882111 UD  0.538023940722 epson  1e-08 bad_counter 0
+Epoch  4 Update  5200 Cost  11.150806427 UD  0.469455945492 epson  1e-08 bad_counter 0
+Epoch  4 Update  5300 Cost  10.4005212784 UD  0.53705056111 epson  1e-08 bad_counter 0
+Epoch  4 Update  5400 Cost  8.66696166992 UD  0.515521458785 epson  1e-08 bad_counter 0
+Epoch  4 Update  5500 Cost  3.75390267372 UD  0.527007853985 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.85040989717
+Valid WER: 29.78%, SACC: 19.17%
+Seen 8835 samples
+Epoch  5 Update  5600 Cost  1.7775220871 UD  0.456810728709 epson  1e-08 bad_counter 0
+Epoch  5 Update  5700 Cost  2.46787405014 UD  0.528144073486 epson  1e-08 bad_counter 0
+Epoch  5 Update  5800 Cost  2.54629468918 UD  0.499560256799 epson  1e-08 bad_counter 0
+Epoch  5 Update  5900 Cost  5.57458686829 UD  0.522085726261 epson  1e-08 bad_counter 0
+Epoch  5 Update  6000 Cost  7.52426719666 UD  0.529761425654 epson  1e-08 bad_counter 0
+Epoch  5 Update  6100 Cost  1.25321054459 UD  0.51101193428 epson  1e-08 bad_counter 0
+Epoch  5 Update  6200 Cost  5.22605800629 UD  0.51668454806 epson  1e-08 bad_counter 0
+Epoch  5 Update  6300 Cost  7.43399715424 UD  0.507450524966 epson  1e-08 bad_counter 0
+Epoch  5 Update  6400 Cost  8.5985660553 UD  0.466991647085 epson  1e-08 bad_counter 0
+Epoch  5 Update  6500 Cost  3.30749249458 UD  0.56503285567 epson  1e-08 bad_counter 0
+Epoch  5 Update  6600 Cost  3.84218811989 UD  0.54453385671 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.88016423384
+Valid WER: 24.60%, SACC: 25.25%
+Seen 8835 samples
+Epoch  6 Update  6700 Cost  5.43718576431 UD  0.497886852423 epson  1e-08 bad_counter 0
+Epoch  6 Update  6800 Cost  4.71406984329 UD  0.524971155326 epson  1e-08 bad_counter 0
+Epoch  6 Update  6900 Cost  1.1557905674 UD  0.493108121554 epson  1e-08 bad_counter 0
+Epoch  6 Update  7000 Cost  5.23661899567 UD  0.524653963248 epson  1e-08 bad_counter 0
+Epoch  6 Update  7100 Cost  7.92477941513 UD  0.565259683132 epson  1e-08 bad_counter 0
+Epoch  6 Update  7200 Cost  3.08412742615 UD  0.567240126928 epson  1e-08 bad_counter 0
+Epoch  6 Update  7300 Cost  1.33055067062 UD  0.463793361187 epson  1e-08 bad_counter 0
+Epoch  6 Update  7400 Cost  4.75691366196 UD  0.511292858919 epson  1e-08 bad_counter 0
+Epoch  6 Update  7500 Cost  1.5487112999 UD  0.578373877207 epson  1e-08 bad_counter 0
+Epoch  6 Update  7600 Cost  5.34176397324 UD  0.523016468684 epson  1e-08 bad_counter 0
+Epoch  6 Update  7700 Cost  2.69753408432 UD  0.551764098803 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.10345240037
+Valid WER: 27.04%, SACC: 21.40%
+Seen 8835 samples
+Epoch  7 Update  7800 Cost  5.37982368469 UD  0.517738282681 epson  1e-08 bad_counter 1
+Epoch  7 Update  7900 Cost  3.97123265266 UD  0.571356968085 epson  1e-08 bad_counter 1
+Epoch  7 Update  8000 Cost  5.02718734741 UD  0.539521817366 epson  1e-08 bad_counter 1
+Epoch  7 Update  8100 Cost  0.668944716454 UD  0.562850602468 epson  1e-08 bad_counter 1
+Epoch  7 Update  8200 Cost  1.11282896996 UD  0.550781917572 epson  1e-08 bad_counter 1
+Epoch  7 Update  8300 Cost  1.91425895691 UD  0.553706761201 epson  1e-08 bad_counter 1
+Epoch  7 Update  8400 Cost  2.1017768383 UD  0.500282847881 epson  1e-08 bad_counter 1
+Epoch  7 Update  8500 Cost  8.31003761292 UD  0.509179941813 epson  1e-08 bad_counter 1
+Epoch  7 Update  8600 Cost  4.50724315643 UD  0.512960994244 epson  1e-08 bad_counter 1
+Epoch  7 Update  8700 Cost  4.60267162323 UD  0.477190609773 epson  1e-08 bad_counter 1
+Epoch  7 Update  8800 Cost  3.00142407417 UD  0.495378088951 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  7.00779551665
+Valid WER: 21.56%, SACC: 30.53%
+Seen 8835 samples
+Epoch  8 Update  8900 Cost  2.55783987045 UD  0.52236858209 epson  1e-08 bad_counter 0
+Epoch  8 Update  9000 Cost  3.04345870018 UD  0.50846910874 epson  1e-08 bad_counter 0
+Epoch  8 Update  9100 Cost  3.11600780487 UD  0.516927544276 epson  1e-08 bad_counter 0
+Epoch  8 Update  9200 Cost  2.22561216354 UD  0.539180664221 epson  1e-08 bad_counter 0
+Epoch  8 Update  9300 Cost  0.46051093936 UD  0.511976818244 epson  1e-08 bad_counter 0
+Epoch  8 Update  9400 Cost  4.93500137329 UD  0.513951655229 epson  1e-08 bad_counter 0
+Epoch  8 Update  9500 Cost  5.68114185333 UD  0.535692314307 epson  1e-08 bad_counter 0
+Epoch  8 Update  9600 Cost  2.39705777168 UD  0.537573166688 epson  1e-08 bad_counter 0
+Epoch  8 Update  9700 Cost  3.9425868988 UD  0.537725154559 epson  1e-08 bad_counter 0
+Epoch  8 Update  9800 Cost  4.27614498138 UD  0.491566423575 epson  1e-08 bad_counter 0
+Epoch  8 Update  9900 Cost  4.23875808716 UD  0.528339854876 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.00137681564
+Valid WER: 20.24%, SACC: 31.03%
+Seen 8835 samples
+Epoch  9 Update  10000 Cost  3.58955764771 UD  0.522576272488 epson  1e-08 bad_counter 0
+Epoch  9 Update  10100 Cost  4.41393232346 UD  0.541388881207 epson  1e-08 bad_counter 0
+Epoch  9 Update  10200 Cost  4.59513092041 UD  0.492525517941 epson  1e-08 bad_counter 0
+Epoch  9 Update  10300 Cost  1.04478120804 UD  0.530888887246 epson  1e-08 bad_counter 0
+Epoch  9 Update  10400 Cost  8.24048137665 UD  0.584030735493 epson  1e-08 bad_counter 0
+Epoch  9 Update  10500 Cost  0.573370635509 UD  0.570036979516 epson  1e-08 bad_counter 0
+Epoch  9 Update  10600 Cost  0.986473917961 UD  0.533323184649 epson  1e-08 bad_counter 0
+Epoch  9 Update  10700 Cost  4.0126209259 UD  0.548672775428 epson  1e-08 bad_counter 0
+Epoch  9 Update  10800 Cost  3.15243005753 UD  0.526952445507 epson  1e-08 bad_counter 0
+Epoch  9 Update  10900 Cost  0.998648285866 UD  0.491992131869 epson  1e-08 bad_counter 0
+Epoch  9 Update  11000 Cost  0.740263462067 UD  0.504551541805 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.12078923384
+Valid WER: 23.42%, SACC: 25.96%
+Seen 8835 samples
+Epoch  10 Update  11100 Cost  3.41372609138 UD  0.53302842776 epson  1e-08 bad_counter 1
+Epoch  10 Update  11200 Cost  3.27169513702 UD  0.526221577326 epson  1e-08 bad_counter 1
+Epoch  10 Update  11300 Cost  4.24793815613 UD  0.561316740513 epson  1e-08 bad_counter 1
+Epoch  10 Update  11400 Cost  1.60266399384 UD  0.483748094241 epson  1e-08 bad_counter 1
+Epoch  10 Update  11500 Cost  2.83452820778 UD  0.533683160941 epson  1e-08 bad_counter 1
+Epoch  10 Update  11600 Cost  0.797675848007 UD  0.512755819162 epson  1e-08 bad_counter 1
+Epoch  10 Update  11700 Cost  0.799691200256 UD  0.515194622676 epson  1e-08 bad_counter 1
+Epoch  10 Update  11800 Cost  2.3485519886 UD  0.554010117054 epson  1e-08 bad_counter 1
+Epoch  10 Update  11900 Cost  1.64117109776 UD  0.559782779217 epson  1e-08 bad_counter 1
+Epoch  10 Update  12000 Cost  9.10304641724 UD  0.509260801474 epson  1e-08 bad_counter 1
+Epoch  10 Update  12100 Cost  2.52750349045 UD  0.453416327635 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.96638894876
+Valid WER: 21.21%, SACC: 31.74%
+Seen 8835 samples
+Epoch  11 Update  12200 Cost  1.70296168327 UD  0.546426403522 epson  1e-08 bad_counter 2
+Epoch  11 Update  12300 Cost  0.417731106281 UD  0.482493249575 epson  1e-08 bad_counter 2
+Epoch  11 Update  12400 Cost  4.47672176361 UD  0.580710689227 epson  1e-08 bad_counter 2
+Epoch  11 Update  12500 Cost  2.95202112198 UD  0.532173538208 epson  1e-08 bad_counter 2
+Epoch  11 Update  12600 Cost  4.22128868103 UD  0.499161259333 epson  1e-08 bad_counter 2
+Epoch  11 Update  12700 Cost  4.72434473038 UD  0.519624145826 epson  1e-08 bad_counter 2
+Epoch  11 Update  12800 Cost  1.37744402885 UD  0.539513488611 epson  1e-08 bad_counter 2
+Epoch  11 Update  12900 Cost  6.75513601303 UD  0.538685917854 epson  1e-08 bad_counter 2
+Epoch  11 Update  13000 Cost  0.880464673042 UD  0.485539758205 epson  1e-08 bad_counter 2
+Epoch  11 Update  13100 Cost  3.84078025818 UD  0.548809174697 epson  1e-08 bad_counter 2
+Epoch  11 Update  13200 Cost  1.50163900852 UD  0.502741630872 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  7.05150416295
+Valid WER: 22.29%, SACC: 30.93%
+Seen 8835 samples
+Epoch  12 Update  13300 Cost  3.41963720322 UD  0.518427288532 epson  1e-08 bad_counter 3
+Epoch  12 Update  13400 Cost  2.21221137047 UD  0.517082393169 epson  1e-08 bad_counter 3
+Epoch  12 Update  13500 Cost  1.55710828304 UD  0.5819256862 epson  1e-08 bad_counter 3
+Epoch  12 Update  13600 Cost  2.39747405052 UD  0.529129938285 epson  1e-08 bad_counter 3
+Epoch  12 Update  13700 Cost  1.02725291252 UD  0.538400892417 epson  1e-08 bad_counter 3
+Epoch  12 Update  13800 Cost  1.77858448029 UD  0.54669907093 epson  1e-08 bad_counter 3
+Epoch  12 Update  13900 Cost  1.48569083214 UD  0.516894066334 epson  1e-08 bad_counter 3
+Epoch  12 Update  14000 Cost  0.520346462727 UD  0.475944574674 epson  1e-08 bad_counter 3
+Epoch  12 Update  14100 Cost  3.41114616394 UD  0.513864509265 epson  1e-08 bad_counter 3
+Epoch  12 Update  14200 Cost  2.5950422287 UD  0.490223586559 epson  1e-08 bad_counter 3
+Epoch  12 Update  14300 Cost  0.591032505035 UD  0.506432827314 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  7.01208511591
+Valid WER: 23.26%, SACC: 34.69%
+Seen 8835 samples
+Epoch  13 Update  14400 Cost  1.57392203808 UD  0.495471739769 epson  1e-08 bad_counter 4
+Epoch  13 Update  14500 Cost  2.20676517487 UD  0.598374422391 epson  1e-08 bad_counter 4
+Epoch  13 Update  14600 Cost  1.79566454887 UD  0.528717764219 epson  1e-08 bad_counter 4
+Epoch  13 Update  14700 Cost  0.948866069317 UD  0.577797047297 epson  1e-08 bad_counter 4
+Epoch  13 Update  14800 Cost  2.36145830154 UD  0.48387808005 epson  1e-08 bad_counter 4
+Epoch  13 Update  14900 Cost  1.14468312263 UD  0.51919918855 epson  1e-08 bad_counter 4
+Epoch  13 Update  15000 Cost  4.28050899506 UD  0.560991064707 epson  1e-08 bad_counter 4
+Epoch  13 Update  15100 Cost  1.42618656158 UD  0.479457418124 epson  1e-08 bad_counter 4
+Epoch  13 Update  15200 Cost  0.816389799118 UD  0.50452076594 epson  1e-08 bad_counter 4
+Epoch  13 Update  15300 Cost  1.28246331215 UD  0.515960423152 epson  1e-08 bad_counter 4
+Epoch  13 Update  15400 Cost  4.02531909943 UD  0.517723409335 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  7.00676603317
+Valid WER: 24.71%, SACC: 33.98%
+Seen 8835 samples
+Epoch  14 Update  15500 Cost  2.21135449409 UD  0.484265204271 epson  1e-08 bad_counter 5
+Epoch  14 Update  15600 Cost  1.89569568634 UD  0.53638103803 epson  1e-08 bad_counter 5
+Epoch  14 Update  15700 Cost  2.1778626442 UD  0.51765995423 epson  1e-08 bad_counter 5
+Epoch  14 Update  15800 Cost  1.61784219742 UD  0.509835978349 epson  1e-08 bad_counter 5
+Epoch  14 Update  15900 Cost  2.70999765396 UD  0.529841411114 epson  1e-08 bad_counter 5
+Epoch  14 Update  16000 Cost  3.1231637001 UD  0.491460394859 epson  1e-08 bad_counter 5
+Epoch  14 Update  16100 Cost  1.13331782818 UD  0.53290343682 epson  1e-08 bad_counter 5
+Epoch  14 Update  16200 Cost  2.65845155716 UD  0.526312120756 epson  1e-08 bad_counter 5
+Epoch  14 Update  16300 Cost  5.39285182953 UD  0.528562259674 epson  1e-08 bad_counter 5
+Epoch  14 Update  16400 Cost  1.05757296085 UD  0.532523655891 epson  1e-08 bad_counter 5
+Epoch  14 Update  16500 Cost  1.52886879444 UD  0.548088479042 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  7.01114723682
+Valid WER: 20.33%, SACC: 34.48%
+Seen 8835 samples
+Epoch  15 Update  16600 Cost  0.47937938571 UD  0.477979815006 epson  1e-08 bad_counter 6
+Epoch  15 Update  16700 Cost  2.61024808884 UD  0.524609792233 epson  1e-08 bad_counter 6
+Epoch  15 Update  16800 Cost  2.70479297638 UD  0.477122330666 epson  1e-08 bad_counter 6
+Epoch  15 Update  16900 Cost  2.36611557007 UD  0.502390865485 epson  1e-08 bad_counter 6
+Epoch  15 Update  17000 Cost  0.586508214474 UD  0.489632447561 epson  1e-08 bad_counter 6
+Epoch  15 Update  17100 Cost  1.22210621834 UD  0.519424927235 epson  1e-08 bad_counter 6
+Epoch  15 Update  17200 Cost  2.11466741562 UD  0.531312652429 epson  1e-08 bad_counter 6
+Epoch  15 Update  17300 Cost  0.874120533466 UD  0.578485254447 epson  1e-08 bad_counter 6
+Epoch  15 Update  17400 Cost  2.01123380661 UD  0.553934959571 epson  1e-08 bad_counter 6
+Epoch  15 Update  17500 Cost  0.927741110325 UD  0.54131522576 epson  1e-08 bad_counter 6
+Epoch  15 Update  17600 Cost  0.71096599102 UD  0.574930898348 epson  1e-08 bad_counter 6
+Saving... Done
+valid set decode done
+cost time ...  7.08967236678
+Valid WER: 24.34%, SACC: 34.38%
+Seen 8835 samples
+Epoch  16 Update  17700 Cost  2.66765427589 UD  0.549804894129 epson  1e-08 bad_counter 7
+Epoch  16 Update  17800 Cost  1.47420167923 UD  0.547499084473 epson  1e-08 bad_counter 7
+Epoch  16 Update  17900 Cost  4.09487199783 UD  0.553458420436 epson  1e-08 bad_counter 7
+Epoch  16 Update  18000 Cost  1.29219317436 UD  0.537357505163 epson  1e-08 bad_counter 7
+Epoch  16 Update  18100 Cost  2.20053458214 UD  0.518013306459 epson  1e-08 bad_counter 7
+Epoch  16 Update  18200 Cost  2.83563947678 UD  0.488996771971 epson  1e-08 bad_counter 7
+Epoch  16 Update  18300 Cost  1.26906144619 UD  0.526773178577 epson  1e-08 bad_counter 7
+Epoch  16 Update  18400 Cost  2.73953700066 UD  0.523539276918 epson  1e-08 bad_counter 7
+Epoch  16 Update  18500 Cost  3.13422870636 UD  0.502069735527 epson  1e-08 bad_counter 7
+Epoch  16 Update  18600 Cost  2.0666513443 UD  0.499954680602 epson  1e-08 bad_counter 7
+Epoch  16 Update  18700 Cost  2.10439610481 UD  0.514475516478 epson  1e-08 bad_counter 7
+Saving... Done
+valid set decode done
+cost time ...  6.9832051158
+Valid WER: 21.02%, SACC: 34.79%
+Seen 8835 samples
+Epoch  17 Update  18800 Cost  0.969787240028 UD  0.528149024645 epson  1e-08 bad_counter 8
+Epoch  17 Update  18900 Cost  1.97735798359 UD  0.591599023342 epson  1e-08 bad_counter 8
+Epoch  17 Update  19000 Cost  1.16035234928 UD  0.479415225983 epson  1e-08 bad_counter 8
+Epoch  17 Update  19100 Cost  2.9894092083 UD  0.509578935305 epson  1e-08 bad_counter 8
+Epoch  17 Update  19200 Cost  1.71986079216 UD  0.524936401844 epson  1e-08 bad_counter 8
+Epoch  17 Update  19300 Cost  0.971898436546 UD  0.486080829302 epson  1e-08 bad_counter 8
+Epoch  17 Update  19400 Cost  1.1817085743 UD  0.532824977239 epson  1e-08 bad_counter 8
+Epoch  17 Update  19500 Cost  2.49484395981 UD  0.486699223518 epson  1e-08 bad_counter 8
+Epoch  17 Update  19600 Cost  1.79266166687 UD  0.516426281134 epson  1e-08 bad_counter 8
+Epoch  17 Update  19700 Cost  2.00759077072 UD  0.544512275855 epson  1e-08 bad_counter 8
+Epoch  17 Update  19800 Cost  1.95397353172 UD  0.524307362239 epson  1e-08 bad_counter 8
+Saving... Done
+valid set decode done
+cost time ...  6.96049848398
+Valid WER: 20.04%, SACC: 34.38%
+Seen 8835 samples
+Epoch  18 Update  19900 Cost  3.28219938278 UD  0.516396693389 epson  1e-08 bad_counter 0
+Epoch  18 Update  20000 Cost  1.6989262104 UD  0.568229150772 epson  1e-08 bad_counter 0
+Epoch  18 Update  20100 Cost  13.1419477463 UD  0.527428221703 epson  1e-08 bad_counter 0
+Epoch  18 Update  20200 Cost  1.98754274845 UD  0.522788512707 epson  1e-08 bad_counter 0
+Epoch  18 Update  20300 Cost  3.51311349869 UD  0.527308297157 epson  1e-08 bad_counter 0
+Epoch  18 Update  20400 Cost  2.68875741959 UD  0.553986990452 epson  1e-08 bad_counter 0
+Epoch  18 Update  20500 Cost  2.13911867142 UD  0.542144640287 epson  1e-08 bad_counter 0
+Epoch  18 Update  20600 Cost  1.44661021233 UD  0.499338416258 epson  1e-08 bad_counter 0
+Epoch  18 Update  20700 Cost  0.765454530716 UD  0.516205791632 epson  1e-08 bad_counter 0
+Epoch  18 Update  20800 Cost  3.29190564156 UD  0.512762955825 epson  1e-08 bad_counter 0
+Epoch  18 Update  20900 Cost  1.47436749935 UD  0.574222358068 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.25494999886
+Valid WER: 25.43%, SACC: 34.38%
+Seen 8835 samples
+Epoch  19 Update  21000 Cost  2.64767169952 UD  0.577976942062 epson  1e-08 bad_counter 1
+Epoch  19 Update  21100 Cost  2.79851436615 UD  0.523531186581 epson  1e-08 bad_counter 1
+Epoch  19 Update  21200 Cost  1.83421230316 UD  0.487817923228 epson  1e-08 bad_counter 1
+Epoch  19 Update  21300 Cost  2.98692965508 UD  0.532894909382 epson  1e-08 bad_counter 1
+Epoch  19 Update  21400 Cost  1.55601334572 UD  0.504017325242 epson  1e-08 bad_counter 1
+Epoch  19 Update  21500 Cost  1.53950846195 UD  0.58868680795 epson  1e-08 bad_counter 1
+Epoch  19 Update  21600 Cost  1.24617600441 UD  0.530299667517 epson  1e-08 bad_counter 1
+Epoch  19 Update  21700 Cost  2.78447031975 UD  0.509940135479 epson  1e-08 bad_counter 1
+Epoch  19 Update  21800 Cost  2.67523622513 UD  0.52444807291 epson  1e-08 bad_counter 1
+Epoch  19 Update  21900 Cost  2.44889736176 UD  0.532538859049 epson  1e-08 bad_counter 1
+Epoch  19 Update  22000 Cost  1.19670343399 UD  0.528719981511 epson  1e-08 bad_counter 1
+Epoch  19 Update  22100 Cost  2.08099150658 UD  0.490941127141 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  7.00706951618
+Valid WER: 24.31%, SACC: 35.50%
+Seen 8835 samples
+Epoch  20 Update  22200 Cost  2.16211366653 UD  0.515490810076 epson  1e-08 bad_counter 2
+Epoch  20 Update  22300 Cost  0.59835588932 UD  0.466106661161 epson  1e-08 bad_counter 2
+Epoch  20 Update  22400 Cost  0.953853011131 UD  0.449793775876 epson  1e-08 bad_counter 2
+Epoch  20 Update  22500 Cost  2.49807262421 UD  0.552308547497 epson  1e-08 bad_counter 2
+Epoch  20 Update  22600 Cost  0.54744374752 UD  0.557953373591 epson  1e-08 bad_counter 2
+Epoch  20 Update  22700 Cost  2.82847094536 UD  0.552500283718 epson  1e-08 bad_counter 2
+Epoch  20 Update  22800 Cost  0.421465337276 UD  0.461434396108 epson  1e-08 bad_counter 2
+Epoch  20 Update  22900 Cost  3.81164622307 UD  0.545858776569 epson  1e-08 bad_counter 2
+Epoch  20 Update  23000 Cost  3.43794536591 UD  0.550784432888 epson  1e-08 bad_counter 2
+Epoch  20 Update  23100 Cost  1.76962518692 UD  0.523748687903 epson  1e-08 bad_counter 2
+Epoch  20 Update  23200 Cost  1.3274936676 UD  0.552430768808 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  7.01936013301
+Valid WER: 24.46%, SACC: 33.77%
+Seen 8835 samples
+Epoch  21 Update  23300 Cost  2.49779939651 UD  0.529543435574 epson  1e-08 bad_counter 3
+Epoch  21 Update  23400 Cost  1.39521574974 UD  0.519901971022 epson  1e-08 bad_counter 3
+Epoch  21 Update  23500 Cost  2.13837099075 UD  0.531641046206 epson  1e-08 bad_counter 3
+Epoch  21 Update  23600 Cost  1.0759871006 UD  0.507472999891 epson  1e-08 bad_counter 3
+Epoch  21 Update  23700 Cost  1.95171368122 UD  0.547690248489 epson  1e-08 bad_counter 3
+Epoch  21 Update  23800 Cost  2.77430772781 UD  0.575040348371 epson  1e-08 bad_counter 3
+Epoch  21 Update  23900 Cost  4.25797843933 UD  0.526945583026 epson  1e-08 bad_counter 3
+Epoch  21 Update  24000 Cost  0.73019772768 UD  0.507268337409 epson  1e-08 bad_counter 3
+Epoch  21 Update  24100 Cost  1.83161640167 UD  0.516175909837 epson  1e-08 bad_counter 3
+Epoch  21 Update  24200 Cost  0.618084549904 UD  0.511620509624 epson  1e-08 bad_counter 3
+Epoch  21 Update  24300 Cost  3.11579298973 UD  0.51120493412 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  7.04438591798
+Valid WER: 18.29%, SACC: 32.86%
+Seen 8835 samples
+Epoch  22 Update  24400 Cost  1.09848499298 UD  0.520558985074 epson  1e-08 bad_counter 0
+Epoch  22 Update  24500 Cost  2.41692042351 UD  0.547486527761 epson  1e-08 bad_counter 0
+Epoch  22 Update  24600 Cost  2.99627542496 UD  0.541753828526 epson  1e-08 bad_counter 0
+Epoch  22 Update  24700 Cost  0.613267362118 UD  0.551795176665 epson  1e-08 bad_counter 0
+Epoch  22 Update  24800 Cost  1.84965980053 UD  0.487604053815 epson  1e-08 bad_counter 0
+Epoch  22 Update  24900 Cost  1.71244609356 UD  0.537857190768 epson  1e-08 bad_counter 0
+Epoch  22 Update  25000 Cost  2.17796182632 UD  0.514199237029 epson  1e-08 bad_counter 0
+Epoch  22 Update  25100 Cost  1.35050308704 UD  0.499835975965 epson  1e-08 bad_counter 0
+Epoch  22 Update  25200 Cost  1.86038434505 UD  0.480276672045 epson  1e-08 bad_counter 0
+Epoch  22 Update  25300 Cost  3.41013050079 UD  0.53299147288 epson  1e-08 bad_counter 0
+Epoch  22 Update  25400 Cost  1.19600129128 UD  0.570587948958 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.08118401766
+Valid WER: 30.46%, SACC: 34.89%
+Seen 8835 samples
+Epoch  23 Update  25500 Cost  2.21761369705 UD  0.56460963885 epson  1e-08 bad_counter 1
+Epoch  23 Update  25600 Cost  2.89562273026 UD  0.533859034379 epson  1e-08 bad_counter 1
+Epoch  23 Update  25700 Cost  1.18130970001 UD  0.546253259977 epson  1e-08 bad_counter 1
+Epoch  23 Update  25800 Cost  0.547885298729 UD  0.486826395988 epson  1e-08 bad_counter 1
+Epoch  23 Update  25900 Cost  2.51712703705 UD  0.523572627703 epson  1e-08 bad_counter 1
+Epoch  23 Update  26000 Cost  3.26643276215 UD  0.508720986048 epson  1e-08 bad_counter 1
+Epoch  23 Update  26100 Cost  2.27882003784 UD  0.516277503967 epson  1e-08 bad_counter 1
+Epoch  23 Update  26200 Cost  2.82798576355 UD  0.513645299276 epson  1e-08 bad_counter 1
+Epoch  23 Update  26300 Cost  0.799266934395 UD  0.543347962697 epson  1e-08 bad_counter 1
+Epoch  23 Update  26400 Cost  0.617979228497 UD  0.513097763062 epson  1e-08 bad_counter 1
+Epoch  23 Update  26500 Cost  4.70432281494 UD  0.491299827894 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  7.02012600104
+Valid WER: 25.14%, SACC: 35.40%
+Seen 8835 samples
+Epoch  24 Update  26600 Cost  0.625932693481 UD  0.465779117743 epson  1e-08 bad_counter 2
+Epoch  24 Update  26700 Cost  0.803788423538 UD  0.539635972182 epson  1e-08 bad_counter 2
+Epoch  24 Update  26800 Cost  2.40631961823 UD  0.507636113962 epson  1e-08 bad_counter 2
+Epoch  24 Update  26900 Cost  3.46632599831 UD  0.546358907223 epson  1e-08 bad_counter 2
+Epoch  24 Update  27000 Cost  0.523991703987 UD  0.485326095422 epson  1e-08 bad_counter 2
+Epoch  24 Update  27100 Cost  1.45789575577 UD  0.497472592195 epson  1e-08 bad_counter 2
+Epoch  24 Update  27200 Cost  0.742628753185 UD  0.55171507597 epson  1e-08 bad_counter 2
+Epoch  24 Update  27300 Cost  2.30754804611 UD  0.546065751712 epson  1e-08 bad_counter 2
+Epoch  24 Update  27400 Cost  0.700685620308 UD  0.50871689717 epson  1e-08 bad_counter 2
+Epoch  24 Update  27500 Cost  1.88177883625 UD  0.538766268889 epson  1e-08 bad_counter 2
+Epoch  24 Update  27600 Cost  1.93289780617 UD  0.527625524998 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  7.06569404999
+Valid WER: 24.83%, SACC: 33.98%
+Seen 8835 samples
+Epoch  25 Update  27700 Cost  0.26379019022 UD  0.560690363248 epson  1e-08 bad_counter 3
+Epoch  25 Update  27800 Cost  2.04795384407 UD  0.544233457247 epson  1e-08 bad_counter 3
+Epoch  25 Update  27900 Cost  1.38541603088 UD  0.545947821935 epson  1e-08 bad_counter 3
+Epoch  25 Update  28000 Cost  1.425735116 UD  0.505176186562 epson  1e-08 bad_counter 3
+Epoch  25 Update  28100 Cost  2.22021627426 UD  0.479248781999 epson  1e-08 bad_counter 3
+Epoch  25 Update  28200 Cost  0.29639518261 UD  0.529114909967 epson  1e-08 bad_counter 3
+Epoch  25 Update  28300 Cost  2.88291501999 UD  0.523798004786 epson  1e-08 bad_counter 3
+Epoch  25 Update  28400 Cost  0.798415541649 UD  0.532192846139 epson  1e-08 bad_counter 3
+Epoch  25 Update  28500 Cost  2.62915158272 UD  0.524556831519 epson  1e-08 bad_counter 3
+Epoch  25 Update  28600 Cost  0.898930132389 UD  0.548247921467 epson  1e-08 bad_counter 3
+Epoch  25 Update  28700 Cost  0.897712469101 UD  0.472966273626 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  7.0438570857
+Valid WER: 24.66%, SACC: 35.29%
+Seen 8835 samples
+Epoch  26 Update  28800 Cost  2.90923428535 UD  0.513706497351 epson  1e-08 bad_counter 4
+Epoch  26 Update  28900 Cost  2.05549097061 UD  0.563637165229 epson  1e-08 bad_counter 4
+Epoch  26 Update  29000 Cost  0.845196545124 UD  0.525295448303 epson  1e-08 bad_counter 4
+Epoch  26 Update  29100 Cost  2.8887758255 UD  0.533511757851 epson  1e-08 bad_counter 4
+Epoch  26 Update  29200 Cost  1.78007078171 UD  0.493127727509 epson  1e-08 bad_counter 4
+Epoch  26 Update  29300 Cost  1.48208343983 UD  0.522873938084 epson  1e-08 bad_counter 4
+Epoch  26 Update  29400 Cost  2.33932113647 UD  0.559643042088 epson  1e-08 bad_counter 4
+Epoch  26 Update  29500 Cost  1.98299694061 UD  0.552225335439 epson  1e-08 bad_counter 4
+Epoch  26 Update  29600 Cost  0.487705767155 UD  0.528791737556 epson  1e-08 bad_counter 4
+Epoch  26 Update  29700 Cost  2.35904693604 UD  0.541882228851 epson  1e-08 bad_counter 4
+Epoch  26 Update  29800 Cost  0.654573142529 UD  0.488147254785 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  7.04700214863
+Valid WER: 23.97%, SACC: 35.60%
+Seen 8835 samples
+Epoch  27 Update  29900 Cost  0.781950056553 UD  0.501358266671 epson  1e-08 bad_counter 5
+Epoch  27 Update  30000 Cost  1.50332403183 UD  0.539569175243 epson  1e-08 bad_counter 5
+Epoch  27 Update  30100 Cost  0.339759349823 UD  0.551824299494 epson  1e-08 bad_counter 5
+Epoch  27 Update  30200 Cost  1.83025860786 UD  0.541540118059 epson  1e-08 bad_counter 5
+Epoch  27 Update  30300 Cost  0.976613044739 UD  0.496105086803 epson  1e-08 bad_counter 5
+Epoch  27 Update  30400 Cost  1.67507815361 UD  0.531786076228 epson  1e-08 bad_counter 5
+Epoch  27 Update  30500 Cost  1.52406191826 UD  0.549327119191 epson  1e-08 bad_counter 5
+Epoch  27 Update  30600 Cost  2.04823112488 UD  0.570050652822 epson  1e-08 bad_counter 5
+Epoch  27 Update  30700 Cost  3.16014719009 UD  0.564448567231 epson  1e-08 bad_counter 5
+Epoch  27 Update  30800 Cost  1.52086496353 UD  0.495257965724 epson  1e-08 bad_counter 5
+Epoch  27 Update  30900 Cost  1.41309475899 UD  0.514666779836 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  7.09363768498
+Valid WER: 17.83%, SACC: 34.69%
+Seen 8835 samples
+Epoch  28 Update  31000 Cost  1.81913852692 UD  0.473625651995 epson  1e-08 bad_counter 0
+Epoch  28 Update  31100 Cost  2.90078020096 UD  0.48651800553 epson  1e-08 bad_counter 0
+Epoch  28 Update  31200 Cost  2.27580118179 UD  0.538347542286 epson  1e-08 bad_counter 0
+Epoch  28 Update  31300 Cost  0.875033259392 UD  0.5335054636 epson  1e-08 bad_counter 0
+Epoch  28 Update  31400 Cost  1.10233807564 UD  0.570038553079 epson  1e-08 bad_counter 0
+Epoch  28 Update  31500 Cost  0.710753619671 UD  0.541620818774 epson  1e-08 bad_counter 0
+Epoch  28 Update  31600 Cost  0.931119561195 UD  0.520882014434 epson  1e-08 bad_counter 0
+Epoch  28 Update  31700 Cost  1.7555577755 UD  0.56780564785 epson  1e-08 bad_counter 0
+Epoch  28 Update  31800 Cost  0.48409318924 UD  0.515989025434 epson  1e-08 bad_counter 0
+Epoch  28 Update  31900 Cost  1.64584183693 UD  0.500453583399 epson  1e-08 bad_counter 0
+Epoch  28 Update  32000 Cost  0.741916418076 UD  0.455729047457 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  7.00404905081
+Valid WER: 18.12%, SACC: 35.70%
+Seen 8835 samples
+Epoch  29 Update  32100 Cost  1.14696836472 UD  0.519404594103 epson  1e-08 bad_counter 1
+Epoch  29 Update  32200 Cost  0.643213391304 UD  0.520153911908 epson  1e-08 bad_counter 1
+Epoch  29 Update  32300 Cost  2.41320180893 UD  0.527101258437 epson  1e-08 bad_counter 1
+Epoch  29 Update  32400 Cost  3.2108206749 UD  0.548447970549 epson  1e-08 bad_counter 1
+Epoch  29 Update  32500 Cost  1.79149436951 UD  0.530873060226 epson  1e-08 bad_counter 1
+Epoch  29 Update  32600 Cost  2.54995822906 UD  0.546116626263 epson  1e-08 bad_counter 1
+Epoch  29 Update  32700 Cost  2.50530004501 UD  0.498154334227 epson  1e-08 bad_counter 1
+Epoch  29 Update  32800 Cost  0.768807172775 UD  0.496725686391 epson  1e-08 bad_counter 1
+Epoch  29 Update  32900 Cost  0.602504909039 UD  0.50415794452 epson  1e-08 bad_counter 1
+Epoch  29 Update  33000 Cost  2.06304597855 UD  0.558072129885 epson  1e-08 bad_counter 1
+Epoch  29 Update  33100 Cost  1.23658394814 UD  0.510636528333 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  7.02065033118
+Valid WER: 22.92%, SACC: 35.80%
+Seen 8835 samples
+Epoch  30 Update  33200 Cost  0.693534314632 UD  0.513485594591 epson  1e-08 bad_counter 2
+Epoch  30 Update  33300 Cost  1.26138281822 UD  0.545142443975 epson  1e-08 bad_counter 2
+Epoch  30 Update  33400 Cost  1.2759308815 UD  0.481789386272 epson  1e-08 bad_counter 2
+Epoch  30 Update  33500 Cost  2.17782831192 UD  0.523485410213 epson  1e-08 bad_counter 2
+Epoch  30 Update  33600 Cost  2.83759331703 UD  0.554200585683 epson  1e-08 bad_counter 2
+Epoch  30 Update  33700 Cost  2.5942773819 UD  0.492002940178 epson  1e-08 bad_counter 2
+Epoch  30 Update  33800 Cost  0.835811376572 UD  0.5286490798 epson  1e-08 bad_counter 2
+Epoch  30 Update  33900 Cost  2.52051067352 UD  0.534277820587 epson  1e-08 bad_counter 2
+Epoch  30 Update  34000 Cost  1.32678937912 UD  0.493406792482 epson  1e-08 bad_counter 2
+Epoch  30 Update  34100 Cost  0.422851204872 UD  0.55045157671 epson  1e-08 bad_counter 2
+Epoch  30 Update  34200 Cost  2.28379631042 UD  0.4992587924 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.9827880462
+Valid WER: 23.43%, SACC: 36.41%
+Seen 8835 samples
+Epoch  31 Update  34300 Cost  0.706871271133 UD  0.530124215285 epson  1e-08 bad_counter 3
+Epoch  31 Update  34400 Cost  2.27655172348 UD  0.538498349984 epson  1e-08 bad_counter 3
+Epoch  31 Update  34500 Cost  2.2147898674 UD  0.531635590394 epson  1e-08 bad_counter 3
+Epoch  31 Update  34600 Cost  0.933617591858 UD  0.567962574959 epson  1e-08 bad_counter 3
+Epoch  31 Update  34700 Cost  2.2156496048 UD  0.537296378613 epson  1e-08 bad_counter 3
+Epoch  31 Update  34800 Cost  1.43099582195 UD  0.545841375987 epson  1e-08 bad_counter 3
+Epoch  31 Update  34900 Cost  0.742582261562 UD  0.526451524099 epson  1e-08 bad_counter 3
+Epoch  31 Update  35000 Cost  0.248948872089 UD  0.518829913934 epson  1e-08 bad_counter 3
+Epoch  31 Update  35100 Cost  2.58329391479 UD  0.482497231166 epson  1e-08 bad_counter 3
+Epoch  31 Update  35200 Cost  2.69331884384 UD  0.464593505859 epson  1e-08 bad_counter 3
+Epoch  31 Update  35300 Cost  0.955297231674 UD  0.517860285441 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  6.98382105033
+Valid WER: 31.94%, SACC: 35.70%
+Seen 8835 samples
+Epoch  32 Update  35400 Cost  3.00469446182 UD  0.528909679254 epson  1e-08 bad_counter 4
+Epoch  32 Update  35500 Cost  0.477121114731 UD  0.542699968815 epson  1e-08 bad_counter 4
+Epoch  32 Update  35600 Cost  0.472931087017 UD  0.513041679064 epson  1e-08 bad_counter 4
+Epoch  32 Update  35700 Cost  0.785328388214 UD  0.480301690102 epson  1e-08 bad_counter 4
+Epoch  32 Update  35800 Cost  1.37905669212 UD  0.521935200691 epson  1e-08 bad_counter 4
+Epoch  32 Update  35900 Cost  1.79285216331 UD  0.515781788031 epson  1e-08 bad_counter 4
+Epoch  32 Update  36000 Cost  2.1803560257 UD  0.585293853283 epson  1e-08 bad_counter 4
+Epoch  32 Update  36100 Cost  0.667483985424 UD  0.429091525078 epson  1e-08 bad_counter 4
+Epoch  32 Update  36200 Cost  2.01947402954 UD  0.507761685054 epson  1e-08 bad_counter 4
+Epoch  32 Update  36300 Cost  1.35969150066 UD  0.502033813794 epson  1e-08 bad_counter 4
+Epoch  32 Update  36400 Cost  2.29539465904 UD  0.540282483896 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  6.85961531798
+Valid WER: 23.25%, SACC: 35.80%
+Seen 8835 samples
+Epoch  33 Update  36500 Cost  3.96046519279 UD  0.461026521524 epson  1e-08 bad_counter 5
+Epoch  33 Update  36600 Cost  2.27031373978 UD  0.475024195512 epson  1e-08 bad_counter 5
+Epoch  33 Update  36700 Cost  1.63335680962 UD  0.55491691033 epson  1e-08 bad_counter 5
+Epoch  33 Update  36800 Cost  6.86664295197 UD  0.516163953145 epson  1e-08 bad_counter 5
+Epoch  33 Update  36900 Cost  1.8303771019 UD  0.511345855395 epson  1e-08 bad_counter 5
+Epoch  33 Update  37000 Cost  0.251934617758 UD  0.48581991593 epson  1e-08 bad_counter 5
+Epoch  33 Update  37100 Cost  1.17669487 UD  0.506889605522 epson  1e-08 bad_counter 5
+Epoch  33 Update  37200 Cost  1.16202664375 UD  0.532159996033 epson  1e-08 bad_counter 5
+Epoch  33 Update  37300 Cost  1.24437308311 UD  0.541328243415 epson  1e-08 bad_counter 5
+Epoch  33 Update  37400 Cost  1.54867053032 UD  0.478137822946 epson  1e-08 bad_counter 5
+Epoch  33 Update  37500 Cost  0.294744461775 UD  0.497726400693 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  6.8800418973
+Valid WER: 18.29%, SACC: 33.98%
+Seen 8835 samples
+Epoch  34 Update  37600 Cost  0.260436236858 UD  0.525419982274 epson  1e-08 bad_counter 6
+Epoch  34 Update  37700 Cost  2.93382716179 UD  0.534045521418 epson  1e-08 bad_counter 6
+Epoch  34 Update  37800 Cost  1.85727918148 UD  0.450711377462 epson  1e-08 bad_counter 6
+Epoch  34 Update  37900 Cost  2.35598754883 UD  0.493139310678 epson  1e-08 bad_counter 6
+Epoch  34 Update  38000 Cost  2.14198946953 UD  0.528143795331 epson  1e-08 bad_counter 6
+Epoch  34 Update  38100 Cost  0.828123033047 UD  0.501672450701 epson  1e-08 bad_counter 6
+Epoch  34 Update  38200 Cost  1.22679769993 UD  0.485071953138 epson  1e-08 bad_counter 6
+Epoch  34 Update  38300 Cost  2.84947228432 UD  0.525372044245 epson  1e-08 bad_counter 6
+Epoch  34 Update  38400 Cost  2.37977790833 UD  0.546430671215 epson  1e-08 bad_counter 6
+Epoch  34 Update  38500 Cost  1.22490310669 UD  0.517536461353 epson  1e-08 bad_counter 6
+Epoch  34 Update  38600 Cost  1.8768491745 UD  0.51795027256 epson  1e-08 bad_counter 6
+Saving... Done
+valid set decode done
+cost time ...  6.91927044789
+Valid WER: 19.34%, SACC: 33.77%
+Seen 8835 samples
+Epoch  35 Update  38700 Cost  1.95288991928 UD  0.530885608991 epson  1e-08 bad_counter 7
+Epoch  35 Update  38800 Cost  0.644168972969 UD  0.557332074642 epson  1e-08 bad_counter 7
+Epoch  35 Update  38900 Cost  0.391616463661 UD  0.517795244853 epson  1e-08 bad_counter 7
+Epoch  35 Update  39000 Cost  0.682808041573 UD  0.534469727675 epson  1e-08 bad_counter 7
+Epoch  35 Update  39100 Cost  0.832923531532 UD  0.516864124934 epson  1e-08 bad_counter 7
+Epoch  35 Update  39200 Cost  2.19247198105 UD  0.516999479135 epson  1e-08 bad_counter 7
+Epoch  35 Update  39300 Cost  1.66856193542 UD  0.517002884547 epson  1e-08 bad_counter 7
+Epoch  35 Update  39400 Cost  2.14458417892 UD  0.520694812139 epson  1e-08 bad_counter 7
+Epoch  35 Update  39500 Cost  0.538114547729 UD  0.485729920864 epson  1e-08 bad_counter 7
+Epoch  35 Update  39600 Cost  3.5178527832 UD  0.500172026952 epson  1e-08 bad_counter 7
+Epoch  35 Update  39700 Cost  0.582938551903 UD  0.472466850281 epson  1e-08 bad_counter 7
+Saving... Done
+valid set decode done
+cost time ...  6.84788843393
+Valid WER: 18.32%, SACC: 34.99%
+Seen 8835 samples
+Epoch  36 Update  39800 Cost  1.34231686592 UD  0.507459763686 epson  1e-08 bad_counter 8
+Epoch  36 Update  39900 Cost  1.00741839409 UD  0.517121724288 epson  1e-08 bad_counter 8
+Epoch  36 Update  40000 Cost  0.697848200798 UD  0.526542850335 epson  1e-08 bad_counter 8
+Epoch  36 Update  40100 Cost  1.09978640079 UD  0.525392182668 epson  1e-08 bad_counter 8
+Epoch  36 Update  40200 Cost  0.88812994957 UD  0.566624704997 epson  1e-08 bad_counter 8
+Epoch  36 Update  40300 Cost  2.05553150177 UD  0.4954459548 epson  1e-08 bad_counter 8
+Epoch  36 Update  40400 Cost  1.01561164856 UD  0.452611772219 epson  1e-08 bad_counter 8
+Epoch  36 Update  40500 Cost  2.19130825996 UD  0.498623216152 epson  1e-08 bad_counter 8
+Epoch  36 Update  40600 Cost  1.91060304642 UD  0.530781443914 epson  1e-08 bad_counter 8
+Epoch  36 Update  40700 Cost  0.282583653927 UD  0.52293463548 epson  1e-08 bad_counter 8
+Epoch  36 Update  40800 Cost  2.34287118912 UD  0.528288471699 epson  1e-08 bad_counter 8
+Saving... Done
+valid set decode done
+cost time ...  6.9270279487
+Valid WER: 18.48%, SACC: 34.58%
+Seen 8835 samples
+Epoch  37 Update  40900 Cost  4.332010746 UD  0.522207641602 epson  1e-08 bad_counter 9
+Epoch  37 Update  41000 Cost  0.719764411449 UD  0.506195898851 epson  1e-08 bad_counter 9
+Epoch  37 Update  41100 Cost  1.44763076305 UD  0.502503756682 epson  1e-08 bad_counter 9
+Epoch  37 Update  41200 Cost  3.38013720512 UD  0.508733844757 epson  1e-08 bad_counter 9
+Epoch  37 Update  41300 Cost  3.46881222725 UD  0.478340693315 epson  1e-08 bad_counter 9
+Epoch  37 Update  41400 Cost  0.205360174179 UD  0.509879132112 epson  1e-08 bad_counter 9
+Epoch  37 Update  41500 Cost  2.02198219299 UD  0.528609677156 epson  1e-08 bad_counter 9
+Epoch  37 Update  41600 Cost  0.963832974434 UD  0.49301164945 epson  1e-08 bad_counter 9
+Epoch  37 Update  41700 Cost  3.02006196976 UD  0.5250766476 epson  1e-08 bad_counter 9
+Epoch  37 Update  41800 Cost  1.23685336113 UD  0.496136116982 epson  1e-08 bad_counter 9
+Epoch  37 Update  41900 Cost  1.12423825264 UD  0.584569259485 epson  1e-08 bad_counter 9
+Saving... Done
+valid set decode done
+cost time ...  6.89898143212
+Valid WER: 22.95%, SACC: 37.12%
+Seen 8835 samples
+Epoch  38 Update  42000 Cost  2.41108512878 UD  0.515239862601 epson  1e-08 bad_counter 10
+Epoch  38 Update  42100 Cost  0.585326611996 UD  0.509434727828 epson  1e-08 bad_counter 10
+Epoch  38 Update  42200 Cost  1.71423006058 UD  0.547498349349 epson  1e-08 bad_counter 10
+Epoch  38 Update  42300 Cost  0.563544094563 UD  0.490082120895 epson  1e-08 bad_counter 10
+Epoch  38 Update  42400 Cost  0.701514422894 UD  0.472649629911 epson  1e-08 bad_counter 10
+Epoch  38 Update  42500 Cost  0.397939503193 UD  0.490210310618 epson  1e-08 bad_counter 10
+Epoch  38 Update  42600 Cost  2.31567883492 UD  0.540444684029 epson  1e-08 bad_counter 10
+Epoch  38 Update  42700 Cost  1.59486830235 UD  0.546812558174 epson  1e-08 bad_counter 10
+Epoch  38 Update  42800 Cost  0.600517630577 UD  0.53933095932 epson  1e-08 bad_counter 10
+Epoch  38 Update  42900 Cost  1.38797163963 UD  0.498658299446 epson  1e-08 bad_counter 10
+Epoch  38 Update  43000 Cost  1.73348402977 UD  0.491651872794 epson  1e-08 bad_counter 10
+Saving... Done
+valid set decode done
+cost time ...  6.91018249989
+Valid WER: 22.94%, SACC: 37.73%
+Seen 8835 samples
+Epoch  39 Update  43100 Cost  3.37864398956 UD  0.533987855911 epson  1e-08 bad_counter 11
+Epoch  39 Update  43200 Cost  1.73525547981 UD  0.489871660868 epson  1e-08 bad_counter 11
+Epoch  39 Update  43300 Cost  0.534223973751 UD  0.560823150476 epson  1e-08 bad_counter 11
+Epoch  39 Update  43400 Cost  3.07662439346 UD  0.507242019971 epson  1e-08 bad_counter 11
+Epoch  39 Update  43500 Cost  0.610252797604 UD  0.512574426333 epson  1e-08 bad_counter 11
+Epoch  39 Update  43600 Cost  0.901496291161 UD  0.495908109347 epson  1e-08 bad_counter 11
+Epoch  39 Update  43700 Cost  2.12870693207 UD  0.541046575705 epson  1e-08 bad_counter 11
+Epoch  39 Update  43800 Cost  2.84707689285 UD  0.557831704617 epson  1e-08 bad_counter 11
+Epoch  39 Update  43900 Cost  1.01671385765 UD  0.489460472266 epson  1e-08 bad_counter 11
+Epoch  39 Update  44000 Cost  0.300230413675 UD  0.496670397123 epson  1e-08 bad_counter 11
+Epoch  39 Update  44100 Cost  1.41092205048 UD  0.507662785053 epson  1e-08 bad_counter 11
+Epoch  39 Update  44200 Cost  0.865803062916 UD  0.499960052967 epson  1e-08 bad_counter 11
+Saving... Done
+valid set decode done
+cost time ...  6.95382356644
+Valid WER: 23.39%, SACC: 36.71%
+Seen 8835 samples
+Epoch  40 Update  44300 Cost  1.84829676151 UD  0.559603027503 epson  1e-08 bad_counter 12
+Epoch  40 Update  44400 Cost  1.71406471729 UD  0.480913364887 epson  1e-08 bad_counter 12
+Epoch  40 Update  44500 Cost  1.09270870686 UD  0.540493746599 epson  1e-08 bad_counter 12
+Epoch  40 Update  44600 Cost  2.47952413559 UD  0.508528379599 epson  1e-08 bad_counter 12
+Epoch  40 Update  44700 Cost  1.89422154427 UD  0.50829428037 epson  1e-08 bad_counter 12
+Epoch  40 Update  44800 Cost  0.919665932655 UD  0.496367983023 epson  1e-08 bad_counter 12
+Epoch  40 Update  44900 Cost  1.21472644806 UD  0.502008533478 epson  1e-08 bad_counter 12
+Epoch  40 Update  45000 Cost  1.2702767849 UD  0.525247645378 epson  1e-08 bad_counter 12
+Epoch  40 Update  45100 Cost  1.81629669666 UD  0.541587046782 epson  1e-08 bad_counter 12
+Epoch  40 Update  45200 Cost  1.60812842846 UD  0.537756204605 epson  1e-08 bad_counter 12
+Epoch  40 Update  45300 Cost  1.81224381924 UD  0.525353459517 epson  1e-08 bad_counter 12
+Saving... Done
+valid set decode done
+cost time ...  6.97675849994
+Valid WER: 17.12%, SACC: 39.45%
+Seen 8835 samples
+Epoch  41 Update  45400 Cost  0.291675239801 UD  0.493687391281 epson  1e-08 bad_counter 0
+Epoch  41 Update  45500 Cost  1.84090447426 UD  0.505184400082 epson  1e-08 bad_counter 0
+Epoch  41 Update  45600 Cost  0.662333905697 UD  0.54042503039 epson  1e-08 bad_counter 0
+Epoch  41 Update  45700 Cost  1.96510255337 UD  0.519426616033 epson  1e-08 bad_counter 0
+Epoch  41 Update  45800 Cost  1.48997557163 UD  0.524021391074 epson  1e-08 bad_counter 0
+Epoch  41 Update  45900 Cost  2.6241402626 UD  0.53032383124 epson  1e-08 bad_counter 0
+Epoch  41 Update  46000 Cost  3.08824038506 UD  0.522895197074 epson  1e-08 bad_counter 0
+Epoch  41 Update  46100 Cost  3.42668652534 UD  0.520168924332 epson  1e-08 bad_counter 0
+Epoch  41 Update  46200 Cost  1.3741979599 UD  0.499669412772 epson  1e-08 bad_counter 0
+Epoch  41 Update  46300 Cost  0.587582051754 UD  0.502729570866 epson  1e-08 bad_counter 0
+Epoch  41 Update  46400 Cost  2.19575405121 UD  0.534683191776 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.96883191665
+Valid WER: 17.31%, SACC: 38.24%
+Seen 8835 samples
+Epoch  42 Update  46500 Cost  0.665343523026 UD  0.53144090573 epson  1e-08 bad_counter 1
+Epoch  42 Update  46600 Cost  2.45815372467 UD  0.523540798823 epson  1e-08 bad_counter 1
+Epoch  42 Update  46700 Cost  0.991967618465 UD  0.589438688755 epson  1e-08 bad_counter 1
+Epoch  42 Update  46800 Cost  0.590765416622 UD  0.552173423767 epson  1e-08 bad_counter 1
+Epoch  42 Update  46900 Cost  2.13149046898 UD  0.572894565264 epson  1e-08 bad_counter 1
+Epoch  42 Update  47000 Cost  1.11489415169 UD  0.541964141528 epson  1e-08 bad_counter 1
+Epoch  42 Update  47100 Cost  1.85643410683 UD  0.490536296368 epson  1e-08 bad_counter 1
+Epoch  42 Update  47200 Cost  0.906984388828 UD  0.422460520267 epson  1e-08 bad_counter 1
+Epoch  42 Update  47300 Cost  2.27261090279 UD  0.471765744686 epson  1e-08 bad_counter 1
+Epoch  42 Update  47400 Cost  0.721327722073 UD  0.500399923325 epson  1e-08 bad_counter 1
+Epoch  42 Update  47500 Cost  2.60620975494 UD  0.503306249777 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.93674474955
+Valid WER: 17.41%, SACC: 36.51%
+Seen 8835 samples
+Epoch  43 Update  47600 Cost  3.65419435501 UD  0.544870297114 epson  1e-08 bad_counter 2
+Epoch  43 Update  47700 Cost  2.64270162582 UD  0.516035787265 epson  1e-08 bad_counter 2
+Epoch  43 Update  47800 Cost  2.63659453392 UD  0.510194222132 epson  1e-08 bad_counter 2
+Epoch  43 Update  47900 Cost  2.96936297417 UD  0.519265846411 epson  1e-08 bad_counter 2
+Epoch  43 Update  48000 Cost  2.2551035881 UD  0.47516446511 epson  1e-08 bad_counter 2
+Epoch  43 Update  48100 Cost  0.763949155807 UD  0.488811294238 epson  1e-08 bad_counter 2
+Epoch  43 Update  48200 Cost  1.39351582527 UD  0.490536264579 epson  1e-08 bad_counter 2
+Epoch  43 Update  48300 Cost  1.96102619171 UD  0.542415940762 epson  1e-08 bad_counter 2
+Epoch  43 Update  48400 Cost  1.64477276802 UD  0.515826042493 epson  1e-08 bad_counter 2
+Epoch  43 Update  48500 Cost  1.18612575531 UD  0.556489157677 epson  1e-08 bad_counter 2
+Epoch  43 Update  48600 Cost  0.534177541733 UD  0.545771487554 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.94144003391
+Valid WER: 17.77%, SACC: 36.71%
+Seen 8835 samples
+Epoch  44 Update  48700 Cost  0.739706575871 UD  0.523708168666 epson  1e-08 bad_counter 3
+Epoch  44 Update  48800 Cost  1.63440918922 UD  0.506938680013 epson  1e-08 bad_counter 3
+Epoch  44 Update  48900 Cost  1.75156641006 UD  0.54290677309 epson  1e-08 bad_counter 3
+Epoch  44 Update  49000 Cost  1.66820311546 UD  0.542509933313 epson  1e-08 bad_counter 3
+Epoch  44 Update  49100 Cost  1.93341732025 UD  0.523303325971 epson  1e-08 bad_counter 3
+Epoch  44 Update  49200 Cost  0.694136738777 UD  0.512925159931 epson  1e-08 bad_counter 3
+Epoch  44 Update  49300 Cost  0.686930418015 UD  0.511726355553 epson  1e-08 bad_counter 3
+Epoch  44 Update  49400 Cost  3.34862184525 UD  0.521094572544 epson  1e-08 bad_counter 3
+Epoch  44 Update  49500 Cost  2.77195119858 UD  0.481439960003 epson  1e-08 bad_counter 3
+Epoch  44 Update  49600 Cost  1.16788339615 UD  0.525033624967 epson  1e-08 bad_counter 3
+Epoch  44 Update  49700 Cost  0.516978502274 UD  0.498182590803 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  6.88872590065
+Valid WER: 17.56%, SACC: 37.42%
+Seen 8835 samples
+Epoch  45 Update  49800 Cost  1.87802505493 UD  0.496917466323 epson  1e-08 bad_counter 4
+Epoch  45 Update  49900 Cost  0.902922153473 UD  0.490292914708 epson  1e-08 bad_counter 4
+Epoch  45 Update  50000 Cost  2.94867706299 UD  0.539606690407 epson  1e-08 bad_counter 4
+Epoch  45 Update  50100 Cost  0.466201633215 UD  0.542209307353 epson  1e-08 bad_counter 4
+Epoch  45 Update  50200 Cost  0.386278122663 UD  0.505520029863 epson  1e-08 bad_counter 4
+Epoch  45 Update  50300 Cost  0.865057051182 UD  0.459433046977 epson  1e-08 bad_counter 4
+Epoch  45 Update  50400 Cost  1.17408156395 UD  0.590183413029 epson  1e-08 bad_counter 4
+Epoch  45 Update  50500 Cost  2.51397752762 UD  0.503983298937 epson  1e-08 bad_counter 4
+Epoch  45 Update  50600 Cost  0.985403180122 UD  0.521514352163 epson  1e-08 bad_counter 4
+Epoch  45 Update  50700 Cost  1.8923728466 UD  0.496847689152 epson  1e-08 bad_counter 4
+Epoch  45 Update  50800 Cost  1.71756911278 UD  0.529385411739 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  6.92030298313
+Valid WER: 22.86%, SACC: 38.44%
+Seen 8835 samples
+Epoch  46 Update  50900 Cost  2.57417297363 UD  0.443043812116 epson  1e-08 bad_counter 5
+Epoch  46 Update  51000 Cost  1.12907528877 UD  0.521231575807 epson  1e-08 bad_counter 5
+Epoch  46 Update  51100 Cost  0.478855222464 UD  0.534209521612 epson  1e-08 bad_counter 5
+Epoch  46 Update  51200 Cost  0.96232008934 UD  0.49340326786 epson  1e-08 bad_counter 5
+Epoch  46 Update  51300 Cost  2.03245687485 UD  0.526981111368 epson  1e-08 bad_counter 5
+Epoch  46 Update  51400 Cost  1.03429389 UD  0.549244538943 epson  1e-08 bad_counter 5
+Epoch  46 Update  51500 Cost  0.592212796211 UD  0.477390853564 epson  1e-08 bad_counter 5
+Epoch  46 Update  51600 Cost  0.236431062222 UD  0.513098124663 epson  1e-08 bad_counter 5
+Epoch  46 Update  51700 Cost  1.22277164459 UD  0.493661423524 epson  1e-08 bad_counter 5
+Epoch  46 Update  51800 Cost  2.40203928947 UD  0.523860569795 epson  1e-08 bad_counter 5
+Epoch  46 Update  51900 Cost  1.58424675465 UD  0.509684185187 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  6.85626046658
+Valid WER: 24.12%, SACC: 36.00%
+Seen 8835 samples
+Epoch  47 Update  52000 Cost  2.2603533268 UD  0.517657474677 epson  1e-08 bad_counter 6
+Epoch  47 Update  52100 Cost  1.9981045723 UD  0.506817356745 epson  1e-08 bad_counter 6
+Epoch  47 Update  52200 Cost  1.36208379269 UD  0.505512948831 epson  1e-08 bad_counter 6
+Epoch  47 Update  52300 Cost  1.6609184742 UD  0.569344643752 epson  1e-08 bad_counter 6
+Epoch  47 Update  52400 Cost  4.77909231186 UD  0.560944235325 epson  1e-08 bad_counter 6
+Epoch  47 Update  52500 Cost  0.39792406559 UD  0.474427346388 epson  1e-08 bad_counter 6
+Epoch  47 Update  52600 Cost  0.53385078907 UD  0.499177400271 epson  1e-08 bad_counter 6
+Epoch  47 Update  52700 Cost  0.983628749847 UD  0.495054626465 epson  1e-08 bad_counter 6
+Epoch  47 Update  52800 Cost  1.36532533169 UD  0.495190052191 epson  1e-08 bad_counter 6
+Epoch  47 Update  52900 Cost  1.15185976028 UD  0.495145463943 epson  1e-08 bad_counter 6
+Epoch  47 Update  53000 Cost  3.10281610489 UD  0.53188311259 epson  1e-08 bad_counter 6
+Saving... Done
+valid set decode done
+cost time ...  6.85652791659
+Valid WER: 16.93%, SACC: 39.05%
+Seen 8835 samples
+Epoch  48 Update  53100 Cost  1.47873699665 UD  0.515197730064 epson  1e-08 bad_counter 0
+Epoch  48 Update  53200 Cost  1.89405250549 UD  0.535598027706 epson  1e-08 bad_counter 0
+Epoch  48 Update  53300 Cost  0.916990339756 UD  0.503149767717 epson  1e-08 bad_counter 0
+Epoch  48 Update  53400 Cost  0.280950009823 UD  0.515229765574 epson  1e-08 bad_counter 0
+Epoch  48 Update  53500 Cost  2.97223782539 UD  0.541595109304 epson  1e-08 bad_counter 0
+Epoch  48 Update  53600 Cost  2.16866970062 UD  0.5181528608 epson  1e-08 bad_counter 0
+Epoch  48 Update  53700 Cost  3.54721546173 UD  0.495614147186 epson  1e-08 bad_counter 0
+Epoch  48 Update  53800 Cost  0.672576069832 UD  0.468410674731 epson  1e-08 bad_counter 0
+Epoch  48 Update  53900 Cost  2.20001220703 UD  0.522980892658 epson  1e-08 bad_counter 0
+Epoch  48 Update  54000 Cost  2.51721978188 UD  0.525166412195 epson  1e-08 bad_counter 0
+Epoch  48 Update  54100 Cost  1.02971887589 UD  0.498492530982 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.86273416678
+Valid WER: 22.91%, SACC: 39.15%
+Seen 8835 samples
+Epoch  49 Update  54200 Cost  2.33487510681 UD  0.5005179286 epson  1e-08 bad_counter 1
+Epoch  49 Update  54300 Cost  1.26950705051 UD  0.453064465523 epson  1e-08 bad_counter 1
+Epoch  49 Update  54400 Cost  0.767191886902 UD  0.480760967731 epson  1e-08 bad_counter 1
+Epoch  49 Update  54500 Cost  0.520536720753 UD  0.51566418012 epson  1e-08 bad_counter 1
+Epoch  49 Update  54600 Cost  0.948488950729 UD  0.535537087917 epson  1e-08 bad_counter 1
+Epoch  49 Update  54700 Cost  2.67495465279 UD  0.501052459081 epson  1e-08 bad_counter 1
+Epoch  49 Update  54800 Cost  0.465369582176 UD  0.517408287525 epson  1e-08 bad_counter 1
+Epoch  49 Update  54900 Cost  2.43874192238 UD  0.461167740822 epson  1e-08 bad_counter 1
+Epoch  49 Update  55000 Cost  1.32783675194 UD  0.523645897706 epson  1e-08 bad_counter 1
+Epoch  49 Update  55100 Cost  1.09989547729 UD  0.544835948944 epson  1e-08 bad_counter 1
+Epoch  49 Update  55200 Cost  0.281738966703 UD  0.545521036784 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.86546958288
+Valid WER: 23.69%, SACC: 37.53%
+Seen 8835 samples
+Epoch  50 Update  55300 Cost  0.782453417778 UD  0.575221999486 epson  1e-08 bad_counter 2
+Epoch  50 Update  55400 Cost  1.64410710335 UD  0.529447599252 epson  1e-08 bad_counter 2
+Epoch  50 Update  55500 Cost  0.423740327358 UD  0.49280727307 epson  1e-08 bad_counter 2
+Epoch  50 Update  55600 Cost  0.823892712593 UD  0.50270075798 epson  1e-08 bad_counter 2
+Epoch  50 Update  55700 Cost  1.74929058552 UD  0.49433072408 epson  1e-08 bad_counter 2
+Epoch  50 Update  55800 Cost  1.83523750305 UD  0.526546363036 epson  1e-08 bad_counter 2
+Epoch  50 Update  55900 Cost  0.436138868332 UD  0.535865787665 epson  1e-08 bad_counter 2
+Epoch  50 Update  56000 Cost  0.834261059761 UD  0.473715309302 epson  1e-08 bad_counter 2
+Epoch  50 Update  56100 Cost  0.759848237038 UD  0.546829442183 epson  1e-08 bad_counter 2
+Epoch  50 Update  56200 Cost  1.10717439651 UD  0.512437816461 epson  1e-08 bad_counter 2
+Epoch  50 Update  56300 Cost  3.62071800232 UD  0.487164537112 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.8844111681
+Valid WER: 17.01%, SACC: 38.03%
+Seen 8835 samples
+Epoch  51 Update  56400 Cost  0.717819571495 UD  0.537186117967 epson  1e-08 bad_counter 3
+Epoch  51 Update  56500 Cost  0.264644622803 UD  0.585176873207 epson  1e-08 bad_counter 3
+Epoch  51 Update  56600 Cost  0.750424087048 UD  0.459917998314 epson  1e-08 bad_counter 3
+Epoch  51 Update  56700 Cost  1.55574202538 UD  0.548563444614 epson  1e-08 bad_counter 3
+Epoch  51 Update  56800 Cost  1.11203479767 UD  0.49934176604 epson  1e-08 bad_counter 3
+Epoch  51 Update  56900 Cost  0.279268682003 UD  0.53757490317 epson  1e-08 bad_counter 3
+Epoch  51 Update  57000 Cost  1.64123535156 UD  0.514745926857 epson  1e-08 bad_counter 3
+Epoch  51 Update  57100 Cost  2.22480177879 UD  0.495923419793 epson  1e-08 bad_counter 3
+Epoch  51 Update  57200 Cost  1.68969106674 UD  0.52595662276 epson  1e-08 bad_counter 3
+Epoch  51 Update  57300 Cost  2.18624973297 UD  0.52422200044 epson  1e-08 bad_counter 3
+Epoch  51 Update  57400 Cost  1.52187466621 UD  0.501285771529 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  6.94767273664
+Valid WER: 23.29%, SACC: 37.12%
+Seen 8835 samples
+Epoch  52 Update  57500 Cost  3.58510828018 UD  0.460205558936 epson  1e-08 bad_counter 4
+Epoch  52 Update  57600 Cost  1.91658782959 UD  0.517509531975 epson  1e-08 bad_counter 4
+Epoch  52 Update  57700 Cost  2.47969675064 UD  0.57130382061 epson  1e-08 bad_counter 4
+Epoch  52 Update  57800 Cost  1.0877623558 UD  0.516722842058 epson  1e-08 bad_counter 4
+Epoch  52 Update  57900 Cost  2.02337789536 UD  0.475744903088 epson  1e-08 bad_counter 4
+Epoch  52 Update  58000 Cost  2.65811038017 UD  0.491793878873 epson  1e-08 bad_counter 4
+Epoch  52 Update  58100 Cost  1.87574076653 UD  0.534369015694 epson  1e-08 bad_counter 4
+Epoch  52 Update  58200 Cost  0.584598839283 UD  0.48329051733 epson  1e-08 bad_counter 4
+Epoch  52 Update  58300 Cost  1.86667215824 UD  0.541157341003 epson  1e-08 bad_counter 4
+Epoch  52 Update  58400 Cost  1.5236235857 UD  0.557854187489 epson  1e-08 bad_counter 4
+Epoch  52 Update  58500 Cost  2.86986780167 UD  0.505216598511 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  6.86455241442
+Valid WER: 16.80%, SACC: 37.63%
+Seen 8835 samples
+Epoch  53 Update  58600 Cost  0.584739625454 UD  0.449026226997 epson  1e-08 bad_counter 0
+Epoch  53 Update  58700 Cost  0.549133002758 UD  0.506162325541 epson  1e-08 bad_counter 0
+Epoch  53 Update  58800 Cost  2.02145051956 UD  0.503605790933 epson  1e-08 bad_counter 0
+Epoch  53 Update  58900 Cost  2.20677018166 UD  0.503288265069 epson  1e-08 bad_counter 0
+Epoch  53 Update  59000 Cost  1.2448438406 UD  0.499118125439 epson  1e-08 bad_counter 0
+Epoch  53 Update  59100 Cost  0.311439096928 UD  0.517586278915 epson  1e-08 bad_counter 0
+Epoch  53 Update  59200 Cost  1.66377961636 UD  0.507908082008 epson  1e-08 bad_counter 0
+Epoch  53 Update  59300 Cost  0.978257417679 UD  0.522068806489 epson  1e-08 bad_counter 0
+Epoch  53 Update  59400 Cost  1.75701117516 UD  0.525256375472 epson  1e-08 bad_counter 0
+Epoch  53 Update  59500 Cost  0.881224751472 UD  0.541189499696 epson  1e-08 bad_counter 0
+Epoch  53 Update  59600 Cost  2.99858760834 UD  0.50560148557 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.84320019881
+Valid WER: 16.76%, SACC: 37.83%
+Seen 8835 samples
+Epoch  54 Update  59700 Cost  1.1598906517 UD  0.51004926761 epson  1e-08 bad_counter 0
+Epoch  54 Update  59800 Cost  0.597046613693 UD  0.524925430616 epson  1e-08 bad_counter 0
+Epoch  54 Update  59900 Cost  0.380814790726 UD  0.490767435233 epson  1e-08 bad_counter 0
+Epoch  54 Update  60000 Cost  2.38066577911 UD  0.485751223564 epson  1e-08 bad_counter 0
+Epoch  54 Update  60100 Cost  2.15081691742 UD  0.528664370378 epson  1e-08 bad_counter 0
+Epoch  54 Update  60200 Cost  2.75202775002 UD  0.478784732024 epson  1e-08 bad_counter 0
+Epoch  54 Update  60300 Cost  0.860508799553 UD  0.524337661266 epson  1e-08 bad_counter 0
+Epoch  54 Update  60400 Cost  2.4827504158 UD  0.504919250806 epson  1e-08 bad_counter 0
+Epoch  54 Update  60500 Cost  1.75512051582 UD  0.566046226025 epson  1e-08 bad_counter 0
+Epoch  54 Update  60600 Cost  1.94485116005 UD  0.514527014891 epson  1e-08 bad_counter 0
+Epoch  54 Update  60700 Cost  2.04024744034 UD  0.541767390569 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.89492201805
+Valid WER: 17.12%, SACC: 38.24%
+Seen 8835 samples
+Epoch  55 Update  60800 Cost  3.07841491699 UD  0.506614220142 epson  1e-08 bad_counter 1
+Epoch  55 Update  60900 Cost  2.136926651 UD  0.498033614953 epson  1e-08 bad_counter 1
+Epoch  55 Update  61000 Cost  2.5310652256 UD  0.487365317345 epson  1e-08 bad_counter 1
+Epoch  55 Update  61100 Cost  0.894816875458 UD  0.513343457381 epson  1e-08 bad_counter 1
+Epoch  55 Update  61200 Cost  0.600864470005 UD  0.495360529423 epson  1e-08 bad_counter 1
+Epoch  55 Update  61300 Cost  0.793440341949 UD  0.523138662179 epson  1e-08 bad_counter 1
+Epoch  55 Update  61400 Cost  0.867309451103 UD  0.541591099898 epson  1e-08 bad_counter 1
+Epoch  55 Update  61500 Cost  1.67989611626 UD  0.521742606163 epson  1e-08 bad_counter 1
+Epoch  55 Update  61600 Cost  0.7051872015 UD  0.468008605639 epson  1e-08 bad_counter 1
+Epoch  55 Update  61700 Cost  3.09432339668 UD  0.481221942107 epson  1e-08 bad_counter 1
+Epoch  55 Update  61800 Cost  2.51157093048 UD  0.566571501891 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.83052098354
+Valid WER: 28.09%, SACC: 29.01%
+Seen 8835 samples
+Epoch  56 Update  61900 Cost  3.86929059029 UD  0.519301446279 epson  1e-08 bad_counter 2
+Epoch  56 Update  62000 Cost  2.58681583405 UD  0.483578793208 epson  1e-08 bad_counter 2
+Epoch  56 Update  62100 Cost  2.28670310974 UD  0.525448028247 epson  1e-08 bad_counter 2
+Epoch  56 Update  62200 Cost  1.67762207985 UD  0.506986260414 epson  1e-08 bad_counter 2
+Epoch  56 Update  62300 Cost  0.777802586555 UD  0.514436729749 epson  1e-08 bad_counter 2
+Epoch  56 Update  62400 Cost  2.46058440208 UD  0.538821323713 epson  1e-08 bad_counter 2
+Epoch  56 Update  62500 Cost  0.879278719425 UD  0.526117821534 epson  1e-08 bad_counter 2
+Epoch  56 Update  62600 Cost  2.05680036545 UD  0.520202346643 epson  1e-08 bad_counter 2
+Epoch  56 Update  62700 Cost  2.69158697128 UD  0.502205459277 epson  1e-08 bad_counter 2
+Epoch  56 Update  62800 Cost  1.34856235981 UD  0.506118480364 epson  1e-08 bad_counter 2
+Epoch  56 Update  62900 Cost  0.566007614136 UD  0.493145136038 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.85182781617
+Valid WER: 16.64%, SACC: 39.55%
+Seen 8835 samples
+Epoch  57 Update  63000 Cost  2.41731071472 UD  0.518794679642 epson  1e-08 bad_counter 0
+Epoch  57 Update  63100 Cost  1.00013422966 UD  0.53685863018 epson  1e-08 bad_counter 0
+Epoch  57 Update  63200 Cost  1.82572102547 UD  0.481004854043 epson  1e-08 bad_counter 0
+Epoch  57 Update  63300 Cost  1.02466738224 UD  0.529384831587 epson  1e-08 bad_counter 0
+Epoch  57 Update  63400 Cost  1.40539801121 UD  0.528774078687 epson  1e-08 bad_counter 0
+Epoch  57 Update  63500 Cost  0.75208812952 UD  0.474696628253 epson  1e-08 bad_counter 0
+Epoch  57 Update  63600 Cost  1.9057520628 UD  0.483538663387 epson  1e-08 bad_counter 0
+Epoch  57 Update  63700 Cost  3.04646778107 UD  0.508249251048 epson  1e-08 bad_counter 0
+Epoch  57 Update  63800 Cost  0.565796732903 UD  0.538218283653 epson  1e-08 bad_counter 0
+Epoch  57 Update  63900 Cost  1.96511650085 UD  0.54602316618 epson  1e-08 bad_counter 0
+Epoch  57 Update  64000 Cost  0.80428147316 UD  0.536322490374 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.90867393414
+Valid WER: 18.06%, SACC: 39.76%
+Seen 8835 samples
+Epoch  58 Update  64100 Cost  2.47786855698 UD  0.494861650467 epson  1e-08 bad_counter 1
+Epoch  58 Update  64200 Cost  0.822144627571 UD  0.489326882362 epson  1e-08 bad_counter 1
+Epoch  58 Update  64300 Cost  0.863244056702 UD  0.527002950509 epson  1e-08 bad_counter 1
+Epoch  58 Update  64400 Cost  0.5644723773 UD  0.504480616252 epson  1e-08 bad_counter 1
+Epoch  58 Update  64500 Cost  1.90262198448 UD  0.530720158418 epson  1e-08 bad_counter 1
+Epoch  58 Update  64600 Cost  1.79420602322 UD  0.547340341409 epson  1e-08 bad_counter 1
+Epoch  58 Update  64700 Cost  2.06491160393 UD  0.468646343549 epson  1e-08 bad_counter 1
+Epoch  58 Update  64800 Cost  1.12696552277 UD  0.568445765972 epson  1e-08 bad_counter 1
+Epoch  58 Update  64900 Cost  2.05982398987 UD  0.538226727645 epson  1e-08 bad_counter 1
+Epoch  58 Update  65000 Cost  0.91890758276 UD  0.492316925526 epson  1e-08 bad_counter 1
+Epoch  58 Update  65100 Cost  0.579993009567 UD  0.516179768244 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.88366488616
+Valid WER: 18.09%, SACC: 38.84%
+Seen 8835 samples
+Epoch  59 Update  65200 Cost  0.248538702726 UD  0.480435097218 epson  1e-08 bad_counter 2
+Epoch  59 Update  65300 Cost  0.709887981415 UD  0.554108011723 epson  1e-08 bad_counter 2
+Epoch  59 Update  65400 Cost  1.45465230942 UD  0.497540946802 epson  1e-08 bad_counter 2
+Epoch  59 Update  65500 Cost  1.67024183273 UD  0.532091267904 epson  1e-08 bad_counter 2
+Epoch  59 Update  65600 Cost  1.1374155283 UD  0.470933389664 epson  1e-08 bad_counter 2
+Epoch  59 Update  65700 Cost  1.75889384747 UD  0.502608521779 epson  1e-08 bad_counter 2
+Epoch  59 Update  65800 Cost  0.813790559769 UD  0.546680680911 epson  1e-08 bad_counter 2
+Epoch  59 Update  65900 Cost  0.551779806614 UD  0.50772031943 epson  1e-08 bad_counter 2
+Epoch  59 Update  66000 Cost  0.7080514431 UD  0.473085860411 epson  1e-08 bad_counter 2
+Epoch  59 Update  66100 Cost  1.77351093292 UD  0.494458675385 epson  1e-08 bad_counter 2
+Epoch  59 Update  66200 Cost  1.0213804245 UD  0.494675513109 epson  1e-08 bad_counter 2
+Epoch  59 Update  66300 Cost  2.78183746338 UD  0.549175556501 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.81494813363
+Valid WER: 17.40%, SACC: 38.64%
+Seen 8835 samples
+Epoch  60 Update  66400 Cost  2.12191343307 UD  0.494335738818 epson  1e-08 bad_counter 3
+Epoch  60 Update  66500 Cost  1.33699119091 UD  0.50382947127 epson  1e-08 bad_counter 3
+Epoch  60 Update  66600 Cost  2.66872859001 UD  0.559125757217 epson  1e-08 bad_counter 3
+Epoch  60 Update  66700 Cost  1.41683912277 UD  0.517243627707 epson  1e-08 bad_counter 3
+Epoch  60 Update  66800 Cost  0.347746431828 UD  0.545303030809 epson  1e-08 bad_counter 3
+Epoch  60 Update  66900 Cost  2.48215174675 UD  0.437047759692 epson  1e-08 bad_counter 3
+Epoch  60 Update  67000 Cost  1.72281992435 UD  0.526274236043 epson  1e-08 bad_counter 3
+Epoch  60 Update  67100 Cost  2.35534596443 UD  0.500675213337 epson  1e-08 bad_counter 3
+Epoch  60 Update  67200 Cost  1.05573928356 UD  0.519909743468 epson  1e-08 bad_counter 3
+Epoch  60 Update  67300 Cost  1.64110445976 UD  0.497994891802 epson  1e-08 bad_counter 3
+Epoch  60 Update  67400 Cost  0.774199604988 UD  0.498309004307 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  6.82945671876
+Valid WER: 18.08%, SACC: 36.92%
+Seen 8835 samples
+Epoch  61 Update  67500 Cost  1.74625873566 UD  0.511578929424 epson  1e-08 bad_counter 4
+Epoch  61 Update  67600 Cost  1.67412281036 UD  0.480488169193 epson  1e-08 bad_counter 4
+Epoch  61 Update  67700 Cost  1.56054806709 UD  0.511792667707 epson  1e-08 bad_counter 4
+Epoch  61 Update  67800 Cost  2.37953472137 UD  0.522871271769 epson  1e-08 bad_counter 4
+Epoch  61 Update  67900 Cost  1.67922186852 UD  0.483653318882 epson  1e-08 bad_counter 4
+Epoch  61 Update  68000 Cost  0.566823363304 UD  0.467800919215 epson  1e-08 bad_counter 4
+Epoch  61 Update  68100 Cost  1.06147527695 UD  0.537135370572 epson  1e-08 bad_counter 4
+Epoch  61 Update  68200 Cost  1.59619390965 UD  0.538540784518 epson  1e-08 bad_counter 4
+Epoch  61 Update  68300 Cost  2.20300412178 UD  0.526822912693 epson  1e-08 bad_counter 4
+Epoch  61 Update  68400 Cost  2.09733486176 UD  0.524666802088 epson  1e-08 bad_counter 4
+Epoch  61 Update  68500 Cost  1.04978072643 UD  0.499679263433 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  6.82007726431
+Valid WER: 23.21%, SACC: 37.73%
+Seen 8835 samples
+Epoch  62 Update  68600 Cost  3.43024992943 UD  0.498340328534 epson  1e-08 bad_counter 5
+Epoch  62 Update  68700 Cost  2.37142276764 UD  0.562084289392 epson  1e-08 bad_counter 5
+Epoch  62 Update  68800 Cost  1.63400614262 UD  0.511311244965 epson  1e-08 bad_counter 5
+Epoch  62 Update  68900 Cost  1.04844236374 UD  0.503220959504 epson  1e-08 bad_counter 5
+Epoch  62 Update  69000 Cost  2.53539609909 UD  0.496534709136 epson  1e-08 bad_counter 5
+Epoch  62 Update  69100 Cost  2.22284126282 UD  0.494305761655 epson  1e-08 bad_counter 5
+Epoch  62 Update  69200 Cost  2.16969037056 UD  0.519827385743 epson  1e-08 bad_counter 5
+Epoch  62 Update  69300 Cost  0.592162013054 UD  0.543531310558 epson  1e-08 bad_counter 5
+Epoch  62 Update  69400 Cost  1.14045572281 UD  0.502875081698 epson  1e-08 bad_counter 5
+Epoch  62 Update  69500 Cost  1.75147223473 UD  0.521665672461 epson  1e-08 bad_counter 5
+Epoch  62 Update  69600 Cost  0.707267284393 UD  0.485095699628 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  6.84854403337
+Valid WER: 24.92%, SACC: 36.31%
+Seen 8835 samples
+Epoch  63 Update  69700 Cost  1.68365073204 UD  0.495419593652 epson  1e-08 bad_counter 6
+Epoch  63 Update  69800 Cost  1.96996474266 UD  0.523400100072 epson  1e-08 bad_counter 6
+Epoch  63 Update  69900 Cost  0.519983232021 UD  0.509382049243 epson  1e-08 bad_counter 6
+Epoch  63 Update  70000 Cost  2.09187269211 UD  0.49653488795 epson  1e-08 bad_counter 6
+Epoch  63 Update  70100 Cost  1.79635310173 UD  0.51334729592 epson  1e-08 bad_counter 6
+Epoch  63 Update  70200 Cost  3.79048609734 UD  0.517302497228 epson  1e-08 bad_counter 6
+Epoch  63 Update  70300 Cost  1.05700755119 UD  0.525759800275 epson  1e-08 bad_counter 6
+Epoch  63 Update  70400 Cost  2.42151737213 UD  0.561585398515 epson  1e-08 bad_counter 6
+Epoch  63 Update  70500 Cost  1.65262043476 UD  0.499414352576 epson  1e-08 bad_counter 6
+Epoch  63 Update  70600 Cost  2.11190867424 UD  0.572402179241 epson  1e-08 bad_counter 6
+Epoch  63 Update  70700 Cost  0.635752677917 UD  0.445024462541 epson  1e-08 bad_counter 6
+Saving... Done
+valid set decode done
+cost time ...  6.84515380065
+Valid WER: 17.48%, SACC: 38.03%
+Seen 8835 samples
+Epoch  64 Update  70800 Cost  1.77308535576 UD  0.490333823363 epson  1e-08 bad_counter 7
+Epoch  64 Update  70900 Cost  1.89591419697 UD  0.507606073221 epson  1e-08 bad_counter 7
+Epoch  64 Update  71000 Cost  1.05390954018 UD  0.534249091148 epson  1e-08 bad_counter 7
+Epoch  64 Update  71100 Cost  2.26093912125 UD  0.521994006634 epson  1e-08 bad_counter 7
+Epoch  64 Update  71200 Cost  2.66297388077 UD  0.496497011185 epson  1e-08 bad_counter 7
+Epoch  64 Update  71300 Cost  2.04414415359 UD  0.51453499794 epson  1e-08 bad_counter 7
+Epoch  64 Update  71400 Cost  2.36829662323 UD  0.520974934101 epson  1e-08 bad_counter 7
+Epoch  64 Update  71500 Cost  0.375753462315 UD  0.480441419284 epson  1e-08 bad_counter 7
+Epoch  64 Update  71600 Cost  1.87624943256 UD  0.519076132774 epson  1e-08 bad_counter 7
+Epoch  64 Update  71700 Cost  1.74098682404 UD  0.497723654906 epson  1e-08 bad_counter 7
+Epoch  64 Update  71800 Cost  1.22019720078 UD  0.522751688957 epson  1e-08 bad_counter 7
+Saving... Done
+valid set decode done
+cost time ...  6.87676205238
+Valid WER: 18.04%, SACC: 37.32%
+Seen 8835 samples
+Epoch  65 Update  71900 Cost  2.28463244438 UD  0.515609161059 epson  1e-08 bad_counter 8
+Epoch  65 Update  72000 Cost  0.401730954647 UD  0.547863380114 epson  1e-08 bad_counter 8
+Epoch  65 Update  72100 Cost  1.78958082199 UD  0.480778213342 epson  1e-08 bad_counter 8
+Epoch  65 Update  72200 Cost  5.00348377228 UD  0.516333838304 epson  1e-08 bad_counter 8
+Epoch  65 Update  72300 Cost  1.86976456642 UD  0.520536526044 epson  1e-08 bad_counter 8
+Epoch  65 Update  72400 Cost  0.488442420959 UD  0.49744896094 epson  1e-08 bad_counter 8
+Epoch  65 Update  72500 Cost  0.72206133604 UD  0.536528126399 epson  1e-08 bad_counter 8
+Epoch  65 Update  72600 Cost  0.606568276882 UD  0.497426986694 epson  1e-08 bad_counter 8
+Epoch  65 Update  72700 Cost  0.280137330294 UD  0.455593883991 epson  1e-08 bad_counter 8
+Epoch  65 Update  72800 Cost  0.802798032761 UD  0.496458756924 epson  1e-08 bad_counter 8
+Epoch  65 Update  72900 Cost  1.9409942627 UD  0.559142533938 epson  1e-08 bad_counter 8
+Saving... Done
+valid set decode done
+cost time ...  6.8121281147
+Valid WER: 17.24%, SACC: 37.22%
+Seen 8835 samples
+Epoch  66 Update  73000 Cost  0.728873968124 UD  0.479318086306 epson  1e-08 bad_counter 9
+Epoch  66 Update  73100 Cost  0.883672177792 UD  0.477630364895 epson  1e-08 bad_counter 9
+Epoch  66 Update  73200 Cost  0.441020429134 UD  0.520949904124 epson  1e-08 bad_counter 9
+Epoch  66 Update  73300 Cost  2.36556816101 UD  0.572964183489 epson  1e-08 bad_counter 9
+Epoch  66 Update  73400 Cost  2.26039218903 UD  0.490935862064 epson  1e-08 bad_counter 9
+Epoch  66 Update  73500 Cost  2.1997961998 UD  0.511464365323 epson  1e-08 bad_counter 9
+Epoch  66 Update  73600 Cost  0.2203527987 UD  0.472871263822 epson  1e-08 bad_counter 9
+Epoch  66 Update  73700 Cost  1.87845385075 UD  0.52686230739 epson  1e-08 bad_counter 9
+Epoch  66 Update  73800 Cost  0.695987224579 UD  0.492824085553 epson  1e-08 bad_counter 9
+Epoch  66 Update  73900 Cost  0.89443308115 UD  0.499631444613 epson  1e-08 bad_counter 9
+Epoch  66 Update  74000 Cost  1.33821249008 UD  0.524742102623 epson  1e-08 bad_counter 9
+Saving... Done
+valid set decode done
+cost time ...  6.82021230062
+Valid WER: 16.91%, SACC: 39.45%
+Seen 8835 samples
+Epoch  67 Update  74100 Cost  2.08870577812 UD  0.54877076149 epson  1e-08 bad_counter 10
+Epoch  67 Update  74200 Cost  2.62064981461 UD  0.512059744199 epson  1e-08 bad_counter 10
+Epoch  67 Update  74300 Cost  1.00861477852 UD  0.505219284693 epson  1e-08 bad_counter 10
+Epoch  67 Update  74400 Cost  2.1627573967 UD  0.552921787898 epson  1e-08 bad_counter 10
+Epoch  67 Update  74500 Cost  1.88975226879 UD  0.531135074298 epson  1e-08 bad_counter 10
+Epoch  67 Update  74600 Cost  1.76855540276 UD  0.509349286556 epson  1e-08 bad_counter 10
+Epoch  67 Update  74700 Cost  0.824313044548 UD  0.451484012604 epson  1e-08 bad_counter 10
+Epoch  67 Update  74800 Cost  1.62642014027 UD  0.540394055843 epson  1e-08 bad_counter 10
+Epoch  67 Update  74900 Cost  1.31869268417 UD  0.523163155715 epson  1e-08 bad_counter 10
+Epoch  67 Update  75000 Cost  2.64156460762 UD  0.534158821901 epson  1e-08 bad_counter 10
+Epoch  67 Update  75100 Cost  2.93085289001 UD  0.468172474702 epson  1e-08 bad_counter 10
+Saving... Done
+valid set decode done
+cost time ...  6.85496145089
+Valid WER: 16.71%, SACC: 37.12%
+Seen 8835 samples
+Epoch  68 Update  75200 Cost  2.62362718582 UD  0.459931302071 epson  1e-08 bad_counter 11
+Epoch  68 Update  75300 Cost  2.92062783241 UD  0.531460563342 epson  1e-08 bad_counter 11
+Epoch  68 Update  75400 Cost  2.29294109344 UD  0.480243039131 epson  1e-08 bad_counter 11
+Epoch  68 Update  75500 Cost  3.35968708992 UD  0.524459131559 epson  1e-08 bad_counter 11
+Epoch  68 Update  75600 Cost  2.67177700996 UD  0.500292539597 epson  1e-08 bad_counter 11
+Epoch  68 Update  75700 Cost  0.465092480183 UD  0.489990651608 epson  1e-08 bad_counter 11
+Epoch  68 Update  75800 Cost  5.99174308777 UD  0.502914925416 epson  1e-08 bad_counter 11
+Epoch  68 Update  75900 Cost  0.632469058037 UD  0.488161921501 epson  1e-08 bad_counter 11
+Epoch  68 Update  76000 Cost  2.64631509781 UD  0.511472547054 epson  1e-08 bad_counter 11
+Epoch  68 Update  76100 Cost  2.00317168236 UD  0.53852104346 epson  1e-08 bad_counter 11
+Epoch  68 Update  76200 Cost  1.77493047714 UD  0.523407061895 epson  1e-08 bad_counter 11
+Saving... Done
+valid set decode done
+cost time ...  6.81039040089
+Valid WER: 16.58%, SACC: 40.16%
+Seen 8835 samples
+Epoch  69 Update  76300 Cost  2.45599842072 UD  0.526146674156 epson  1e-08 bad_counter 0
+Epoch  69 Update  76400 Cost  1.31674849987 UD  0.493074095249 epson  1e-08 bad_counter 0
+Epoch  69 Update  76500 Cost  1.32826375961 UD  0.535481556257 epson  1e-08 bad_counter 0
+Epoch  69 Update  76600 Cost  0.873248755932 UD  0.511411678791 epson  1e-08 bad_counter 0
+Epoch  69 Update  76700 Cost  1.87025249004 UD  0.501147568226 epson  1e-08 bad_counter 0
+Epoch  69 Update  76800 Cost  2.39016819 UD  0.513429649671 epson  1e-08 bad_counter 0
+Epoch  69 Update  76900 Cost  1.88725543022 UD  0.531595718861 epson  1e-08 bad_counter 0
+Epoch  69 Update  77000 Cost  1.66174983978 UD  0.457413466771 epson  1e-08 bad_counter 0
+Epoch  69 Update  77100 Cost  0.63229316473 UD  0.483081833522 epson  1e-08 bad_counter 0
+Epoch  69 Update  77200 Cost  1.71502947807 UD  0.535241099199 epson  1e-08 bad_counter 0
+Epoch  69 Update  77300 Cost  2.04374408722 UD  0.527538621426 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.8148363471
+Valid WER: 22.83%, SACC: 39.35%
+Seen 8835 samples
+Epoch  70 Update  77400 Cost  1.14612305164 UD  0.501960929235 epson  1e-08 bad_counter 1
+Epoch  70 Update  77500 Cost  1.37960410118 UD  0.550750720501 epson  1e-08 bad_counter 1
+Epoch  70 Update  77600 Cost  0.626441001892 UD  0.455139823755 epson  1e-08 bad_counter 1
+Epoch  70 Update  77700 Cost  2.02300190926 UD  0.453797411919 epson  1e-08 bad_counter 1
+Epoch  70 Update  77800 Cost  1.6469630003 UD  0.559297172228 epson  1e-08 bad_counter 1
+Epoch  70 Update  77900 Cost  0.684770584106 UD  0.522486762206 epson  1e-08 bad_counter 1
+Epoch  70 Update  78000 Cost  1.74042320251 UD  0.558464344343 epson  1e-08 bad_counter 1
+Epoch  70 Update  78100 Cost  1.94317746162 UD  0.490580157439 epson  1e-08 bad_counter 1
+Epoch  70 Update  78200 Cost  0.59467113018 UD  0.483662545681 epson  1e-08 bad_counter 1
+Epoch  70 Update  78300 Cost  1.5613553524 UD  0.50278472503 epson  1e-08 bad_counter 1
+Epoch  70 Update  78400 Cost  2.82562279701 UD  0.537104038397 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.82157983383
+Valid WER: 16.55%, SACC: 38.95%
+Seen 8835 samples
+Epoch  71 Update  78500 Cost  2.30460858345 UD  0.553352510929 epson  1e-08 bad_counter 0
+Epoch  71 Update  78600 Cost  0.582706511021 UD  0.452820539474 epson  1e-08 bad_counter 0
+Epoch  71 Update  78700 Cost  2.9647359848 UD  0.514145930608 epson  1e-08 bad_counter 0
+Epoch  71 Update  78800 Cost  1.33816003799 UD  0.520321206252 epson  1e-08 bad_counter 0
+Epoch  71 Update  78900 Cost  0.674726188183 UD  0.498425833384 epson  1e-08 bad_counter 0
+Epoch  71 Update  79000 Cost  4.11594867706 UD  0.51475468874 epson  1e-08 bad_counter 0
+Epoch  71 Update  79100 Cost  0.870778203011 UD  0.510265334447 epson  1e-08 bad_counter 0
+Epoch  71 Update  79200 Cost  1.94319057465 UD  0.487316787243 epson  1e-08 bad_counter 0
+Epoch  71 Update  79300 Cost  1.35598731041 UD  0.544069381555 epson  1e-08 bad_counter 0
+Epoch  71 Update  79400 Cost  0.821005940437 UD  0.572420593103 epson  1e-08 bad_counter 0
+Epoch  71 Update  79500 Cost  1.67664217949 UD  0.43546800216 epson  1e-08 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  6.85346779823
+Valid WER: 23.98%, SACC: 36.92%
+Seen 8835 samples
+Epoch  72 Update  79600 Cost  0.464919447899 UD  0.502635701497 epson  1e-08 bad_counter 1
+Epoch  72 Update  79700 Cost  0.558815896511 UD  0.483434891701 epson  1e-08 bad_counter 1
+Epoch  72 Update  79800 Cost  0.465562283993 UD  0.568800234795 epson  1e-08 bad_counter 1
+Epoch  72 Update  79900 Cost  0.605282306671 UD  0.509279576937 epson  1e-08 bad_counter 1
+Epoch  72 Update  80000 Cost  2.53793859482 UD  0.551402342319 epson  1e-08 bad_counter 1
+Epoch  72 Update  80100 Cost  2.50696635246 UD  0.507381169001 epson  1e-08 bad_counter 1
+Epoch  72 Update  80200 Cost  1.19631552696 UD  0.444091208776 epson  1e-08 bad_counter 1
+Epoch  72 Update  80300 Cost  2.04542422295 UD  0.508109128475 epson  1e-08 bad_counter 1
+Epoch  72 Update  80400 Cost  0.637051463127 UD  0.547343575954 epson  1e-08 bad_counter 1
+Epoch  72 Update  80500 Cost  2.26116371155 UD  0.505347474416 epson  1e-08 bad_counter 1
+Epoch  72 Update  80600 Cost  2.18015956879 UD  0.539876461029 epson  1e-08 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  6.90947028399
+Valid WER: 22.30%, SACC: 41.08%
+Seen 8835 samples
+Epoch  73 Update  80700 Cost  2.21163082123 UD  0.500592243671 epson  1e-08 bad_counter 2
+Epoch  73 Update  80800 Cost  1.80493056774 UD  0.532231962681 epson  1e-08 bad_counter 2
+Epoch  73 Update  80900 Cost  1.66114902496 UD  0.539179809888 epson  1e-08 bad_counter 2
+Epoch  73 Update  81000 Cost  1.78251624107 UD  0.555526260535 epson  1e-08 bad_counter 2
+Epoch  73 Update  81100 Cost  0.638785600662 UD  0.503312102954 epson  1e-08 bad_counter 2
+Epoch  73 Update  81200 Cost  2.62630796432 UD  0.482108386358 epson  1e-08 bad_counter 2
+Epoch  73 Update  81300 Cost  2.29954361916 UD  0.509094925721 epson  1e-08 bad_counter 2
+Epoch  73 Update  81400 Cost  1.43550872803 UD  0.50288665692 epson  1e-08 bad_counter 2
+Epoch  73 Update  81500 Cost  1.56664419174 UD  0.549298445384 epson  1e-08 bad_counter 2
+Epoch  73 Update  81600 Cost  1.03128933907 UD  0.556145528952 epson  1e-08 bad_counter 2
+Epoch  73 Update  81700 Cost  2.63259363174 UD  0.486798576514 epson  1e-08 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  6.94635665019
+Valid WER: 18.34%, SACC: 34.89%
+Seen 8835 samples
+Epoch  74 Update  81800 Cost  1.08360266685 UD  0.461512935162 epson  1e-08 bad_counter 3
+Epoch  74 Update  81900 Cost  1.98624956608 UD  0.506518916289 epson  1e-08 bad_counter 3
+Epoch  74 Update  82000 Cost  2.44096183777 UD  0.578066658974 epson  1e-08 bad_counter 3
+Epoch  74 Update  82100 Cost  1.40061616898 UD  0.489069986343 epson  1e-08 bad_counter 3
+Epoch  74 Update  82200 Cost  2.52020001411 UD  0.492032512029 epson  1e-08 bad_counter 3
+Epoch  74 Update  82300 Cost  2.11197853088 UD  0.488497634729 epson  1e-08 bad_counter 3
+Epoch  74 Update  82400 Cost  0.547875404358 UD  0.575751300653 epson  1e-08 bad_counter 3
+Epoch  74 Update  82500 Cost  2.28697633743 UD  0.487487244606 epson  1e-08 bad_counter 3
+Epoch  74 Update  82600 Cost  2.15668320656 UD  0.564286470413 epson  1e-08 bad_counter 3
+Epoch  74 Update  82700 Cost  0.479810535908 UD  0.468598798911 epson  1e-08 bad_counter 3
+Epoch  74 Update  82800 Cost  2.66617918015 UD  0.523834975561 epson  1e-08 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  6.94006243149
+Valid WER: 22.84%, SACC: 39.45%
+Seen 8835 samples
+Epoch  75 Update  82900 Cost  2.32734823227 UD  0.54257046779 epson  1e-08 bad_counter 4
+Epoch  75 Update  83000 Cost  0.472699940205 UD  0.500718049208 epson  1e-08 bad_counter 4
+Epoch  75 Update  83100 Cost  2.43189811707 UD  0.546953769525 epson  1e-08 bad_counter 4
+Epoch  75 Update  83200 Cost  2.28800296783 UD  0.523722223441 epson  1e-08 bad_counter 4
+Epoch  75 Update  83300 Cost  0.482729643583 UD  0.499713007609 epson  1e-08 bad_counter 4
+Epoch  75 Update  83400 Cost  1.61996304989 UD  0.536287649473 epson  1e-08 bad_counter 4
+Epoch  75 Update  83500 Cost  3.11395025253 UD  0.471638937791 epson  1e-08 bad_counter 4
+Epoch  75 Update  83600 Cost  0.758593261242 UD  0.5028322498 epson  1e-08 bad_counter 4
+Epoch  75 Update  83700 Cost  1.42457532883 UD  0.513311314583 epson  1e-08 bad_counter 4
+Epoch  75 Update  83800 Cost  1.50052046776 UD  0.525645550092 epson  1e-08 bad_counter 4
+Epoch  75 Update  83900 Cost  0.979418873787 UD  0.547922726472 epson  1e-08 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  6.93893426657
+Valid WER: 24.20%, SACC: 36.71%
+Seen 8835 samples
+Epoch  76 Update  84000 Cost  1.34229826927 UD  0.512371329467 epson  1e-08 bad_counter 5
+Epoch  76 Update  84100 Cost  1.94410967827 UD  0.492452617486 epson  1e-08 bad_counter 5
+Epoch  76 Update  84200 Cost  3.34348058701 UD  0.528349494934 epson  1e-08 bad_counter 5
+Epoch  76 Update  84300 Cost  0.674754321575 UD  0.568957567215 epson  1e-08 bad_counter 5
+Epoch  76 Update  84400 Cost  2.31991481781 UD  0.506719040871 epson  1e-08 bad_counter 5
+Epoch  76 Update  84500 Cost  0.730395257473 UD  0.543759715557 epson  1e-08 bad_counter 5
+Epoch  76 Update  84600 Cost  2.3063454628 UD  0.5013306578 epson  1e-08 bad_counter 5
+Epoch  76 Update  84700 Cost  2.60874962807 UD  0.521943676472 epson  1e-08 bad_counter 5
+Epoch  76 Update  84800 Cost  2.29972839355 UD  0.542940735817 epson  1e-08 bad_counter 5
+Epoch  76 Update  84900 Cost  0.379807889462 UD  0.459148089091 epson  1e-08 bad_counter 5
+Epoch  76 Update  85000 Cost  0.433641582727 UD  0.492324411869 epson  1e-08 bad_counter 5
+Saving... Done
+valid set decode done
+cost time ...  6.88265945117
+Valid WER: 17.10%, SACC: 37.12%
+Seen 8835 samples
+Epoch  77 Update  85100 Cost  2.30256605148 UD  0.52783708175 epson  1e-08 bad_counter 6
+Epoch  77 Update  85200 Cost  0.438156157732 UD  0.545877754688 epson  1e-08 bad_counter 6
+Epoch  77 Update  85300 Cost  1.94733715057 UD  0.522129948934 epson  1e-08 bad_counter 6
+Epoch  77 Update  85400 Cost  2.63430380821 UD  0.535751863321 epson  1e-08 bad_counter 6
+Epoch  77 Update  85500 Cost  1.04891347885 UD  0.533778055509 epson  1e-08 bad_counter 6
+Epoch  77 Update  85600 Cost  1.40617513657 UD  0.502754286925 epson  1e-08 bad_counter 6
+Epoch  77 Update  85700 Cost  0.561435937881 UD  0.484765946865 epson  1e-08 bad_counter 6
+Epoch  77 Update  85800 Cost  1.46399343014 UD  0.498273233573 epson  1e-08 bad_counter 6
+Epoch  77 Update  85900 Cost  1.23871159554 UD  0.510654890537 epson  1e-08 bad_counter 6
+Epoch  77 Update  86000 Cost  1.05097675323 UD  0.471423216661 epson  1e-08 bad_counter 6
+Epoch  77 Update  86100 Cost  0.693793177605 UD  0.518477261066 epson  1e-08 bad_counter 6
+Saving... Done
+valid set decode done
+cost time ...  6.99752131701
+Valid WER: 29.90%, SACC: 36.92%
+Seen 8835 samples
+Epoch  78 Update  86200 Cost  0.754835724831 UD  0.530541694164 epson  1e-08 bad_counter 7
+Epoch  78 Update  86300 Cost  2.02832365036 UD  0.516546523571 epson  1e-08 bad_counter 7
+Epoch  78 Update  86400 Cost  0.208949357271 UD  0.544797194004 epson  1e-08 bad_counter 7
+Epoch  78 Update  86500 Cost  0.588510274887 UD  0.5477196455 epson  1e-08 bad_counter 7
+Epoch  78 Update  86600 Cost  0.823364019394 UD  0.492540729046 epson  1e-08 bad_counter 7
+Epoch  78 Update  86700 Cost  1.85572576523 UD  0.489039405187 epson  1e-08 bad_counter 7
+Epoch  78 Update  86800 Cost  2.0774872303 UD  0.562202139695 epson  1e-08 bad_counter 7
+Epoch  78 Update  86900 Cost  1.984410882 UD  0.523738805453 epson  1e-08 bad_counter 7
+Epoch  78 Update  87000 Cost  1.17723345757 UD  0.533468266328 epson  1e-08 bad_counter 7
+Epoch  78 Update  87100 Cost  1.9888780117 UD  0.49817747275 epson  1e-08 bad_counter 7
+Epoch  78 Update  87200 Cost  0.585129499435 UD  0.501933081945 epson  1e-08 bad_counter 7
+Saving... Done
+valid set decode done
+cost time ...  6.93631811539
+Valid WER: 28.44%, SACC: 39.15%
+Seen 8835 samples
+Epoch  79 Update  87300 Cost  3.58208751678 UD  0.476265438398 epson  1e-08 bad_counter 8
+Epoch  79 Update  87400 Cost  3.07096338272 UD  0.51859916846 epson  1e-08 bad_counter 8
+Epoch  79 Update  87500 Cost  2.20990753174 UD  0.539876290162 epson  1e-08 bad_counter 8
+Epoch  79 Update  87600 Cost  0.351813882589 UD  0.479058933258 epson  1e-08 bad_counter 8
+Epoch  79 Update  87700 Cost  2.71408700943 UD  0.476195108891 epson  1e-08 bad_counter 8
+Epoch  79 Update  87800 Cost  0.68023955822 UD  0.479873390992 epson  1e-08 bad_counter 8
+Epoch  79 Update  87900 Cost  0.994029641151 UD  0.527954618136 epson  1e-08 bad_counter 8
+Epoch  79 Update  88000 Cost  2.04255986214 UD  0.490925014019 epson  1e-08 bad_counter 8
+Epoch  79 Update  88100 Cost  1.79008615017 UD  0.519834903876 epson  1e-08 bad_counter 8
+Epoch  79 Update  88200 Cost  2.00198888779 UD  0.616091557344 epson  1e-08 bad_counter 8
+Epoch  79 Update  88300 Cost  2.85988020897 UD  0.55652573506 epson  1e-08 bad_counter 8
+Epoch  79 Update  88400 Cost  2.02873301506 UD  0.534887381395 epson  1e-08 bad_counter 8
+Saving... Done
+valid set decode done
+cost time ...  7.05094780127
+Valid WER: 22.65%, SACC: 39.05%
+Seen 8835 samples
+Epoch  80 Update  88500 Cost  0.715865969658 UD  0.515646076202 epson  1e-08 bad_counter 9
+Epoch  80 Update  88600 Cost  1.37779664993 UD  0.543579725424 epson  1e-08 bad_counter 9
+Epoch  80 Update  88700 Cost  1.39174604416 UD  0.541486199697 epson  1e-08 bad_counter 9
+Epoch  80 Update  88800 Cost  2.30427694321 UD  0.53004351457 epson  1e-08 bad_counter 9
+Epoch  80 Update  88900 Cost  1.55135154724 UD  0.520614186923 epson  1e-08 bad_counter 9
+Epoch  80 Update  89000 Cost  2.26956701279 UD  0.529355831941 epson  1e-08 bad_counter 9
+Epoch  80 Update  89100 Cost  1.78371191025 UD  0.51101688544 epson  1e-08 bad_counter 9
+Epoch  80 Update  89200 Cost  1.85147976875 UD  0.550137027105 epson  1e-08 bad_counter 9
+Epoch  80 Update  89300 Cost  1.24745416641 UD  0.483165001869 epson  1e-08 bad_counter 9
+Epoch  80 Update  89400 Cost  0.380429595709 UD  0.51798328956 epson  1e-08 bad_counter 9
+Epoch  80 Update  89500 Cost  1.8202880621 UD  0.508895965417 epson  1e-08 bad_counter 9
+Saving... Done
+valid set decode done
+cost time ...  7.07094279925
+Valid WER: 16.66%, SACC: 39.45%
+Seen 8835 samples
+Epoch  81 Update  89600 Cost  3.12324404716 UD  0.523110894362 epson  1e-08 bad_counter 10
+Epoch  81 Update  89700 Cost  1.18469333649 UD  0.512396434943 epson  1e-08 bad_counter 10
+Epoch  81 Update  89800 Cost  1.93354105949 UD  0.539448698362 epson  1e-08 bad_counter 10
+Epoch  81 Update  89900 Cost  0.591899752617 UD  0.543708455563 epson  1e-08 bad_counter 10
+Epoch  81 Update  90000 Cost  1.01690268517 UD  0.549288459619 epson  1e-08 bad_counter 10
+Epoch  81 Update  90100 Cost  1.70635223389 UD  0.549991635482 epson  1e-08 bad_counter 10
+Epoch  81 Update  90200 Cost  2.36961126328 UD  0.560075720151 epson  1e-08 bad_counter 10
+Epoch  81 Update  90300 Cost  0.605185270309 UD  0.571286487579 epson  1e-08 bad_counter 10
+Epoch  81 Update  90400 Cost  2.18169140816 UD  0.532429790497 epson  1e-08 bad_counter 10
+Epoch  81 Update  90500 Cost  1.02955102921 UD  0.562509381771 epson  1e-08 bad_counter 10
+Epoch  81 Update  90600 Cost  2.06942915916 UD  0.499379106363 epson  1e-08 bad_counter 10
+Saving... Done
+valid set decode done
+cost time ...  7.2530469497
+Valid WER: 17.66%, SACC: 39.25%
+Seen 8835 samples
+Epoch  82 Update  90700 Cost  0.600278139114 UD  0.503821504116 epson  1e-08 bad_counter 11
+Epoch  82 Update  90800 Cost  0.623247206211 UD  0.555112099648 epson  1e-08 bad_counter 11
+Epoch  82 Update  90900 Cost  3.48569583893 UD  0.556817468007 epson  1e-08 bad_counter 11
+Epoch  82 Update  91000 Cost  2.2457306385 UD  0.574427155654 epson  1e-08 bad_counter 11
+Epoch  82 Update  91100 Cost  1.71230816841 UD  0.519426071644 epson  1e-08 bad_counter 11
+Epoch  82 Update  91200 Cost  1.61250126362 UD  0.548408532143 epson  1e-08 bad_counter 11
+Epoch  82 Update  91300 Cost  0.932954072952 UD  0.543879429499 epson  1e-08 bad_counter 11
+Epoch  82 Update  91400 Cost  1.33915162086 UD  0.550633486112 epson  1e-08 bad_counter 11
+Epoch  82 Update  91500 Cost  2.17525815964 UD  0.522245927652 epson  1e-08 bad_counter 11
+Epoch  82 Update  91600 Cost  1.62801218033 UD  0.48552043438 epson  1e-08 bad_counter 11
+Epoch  82 Update  91700 Cost  2.89761734009 UD  0.456704763571 epson  1e-08 bad_counter 11
+Saving... Done
+valid set decode done
+cost time ...  7.11574714979
+Valid WER: 16.67%, SACC: 40.57%
+Seen 8835 samples
+Epoch  83 Update  91800 Cost  1.20145773888 UD  0.525253649553 epson  1e-08 bad_counter 12
+Epoch  83 Update  91900 Cost  1.3178896904 UD  0.562631118298 epson  1e-08 bad_counter 12
+Epoch  83 Update  92000 Cost  1.13211429119 UD  0.529343700409 epson  1e-08 bad_counter 12
+Epoch  83 Update  92100 Cost  2.30006742477 UD  0.578048205376 epson  1e-08 bad_counter 12
+Epoch  83 Update  92200 Cost  2.21140313148 UD  0.622662731012 epson  1e-08 bad_counter 12
+Epoch  83 Update  92300 Cost  1.04564905167 UD  0.984956594308 epson  1e-08 bad_counter 12
+Epoch  83 Update  92400 Cost  2.32566094398 UD  0.889038042227 epson  1e-08 bad_counter 12
+Epoch  83 Update  92500 Cost  0.307387322187 UD  1.01654801766 epson  1e-08 bad_counter 12
+Epoch  83 Update  92600 Cost  0.925377488136 UD  0.952327211698 epson  1e-08 bad_counter 12
+Epoch  83 Update  92700 Cost  1.72748970985 UD  1.10787583192 epson  1e-08 bad_counter 12
+Epoch  83 Update  92800 Cost  2.62350416183 UD  1.0346960187 epson  1e-08 bad_counter 12
+Saving... Done
+valid set decode done
+cost time ...  10.5204955498
+Valid WER: 16.70%, SACC: 39.76%
+Seen 8835 samples
+Epoch  84 Update  92900 Cost  1.89877867699 UD  0.908705631892 epson  1e-08 bad_counter 13
+Epoch  84 Update  93000 Cost  0.288677841425 UD  0.979918317 epson  1e-08 bad_counter 13
+Epoch  84 Update  93100 Cost  0.958853960037 UD  0.975049122175 epson  1e-08 bad_counter 13
+Epoch  84 Update  93200 Cost  0.698525905609 UD  0.989724373817 epson  1e-08 bad_counter 13
+Epoch  84 Update  93300 Cost  2.98448967934 UD  0.990715909004 epson  1e-08 bad_counter 13
+Epoch  84 Update  93400 Cost  1.3717905283 UD  0.97104498148 epson  1e-08 bad_counter 13
+Epoch  84 Update  93500 Cost  0.879238843918 UD  1.07104599078 epson  1e-08 bad_counter 13
+Epoch  84 Update  93600 Cost  1.92104232311 UD  1.11404990355 epson  1e-08 bad_counter 13
+Epoch  84 Update  93700 Cost  0.884825706482 UD  1.028357927 epson  1e-08 bad_counter 13
+Epoch  84 Update  93800 Cost  0.879441082478 UD  1.04531048934 epson  1e-08 bad_counter 13
+Epoch  84 Update  93900 Cost  2.18254637718 UD  0.964671699206 epson  1e-08 bad_counter 13
+Saving... Done
+valid set decode done
+cost time ...  12.6199193994
+Valid WER: 23.03%, SACC: 40.06%
+Seen 8835 samples
+Epoch  85 Update  94000 Cost  1.37364029884 UD  1.08653028011 epson  1e-08 bad_counter 14
+Epoch  85 Update  94100 Cost  0.275590896606 UD  1.15388313135 epson  1e-08 bad_counter 14
+Epoch  85 Update  94200 Cost  1.06803739071 UD  1.06414870421 epson  1e-08 bad_counter 14
+Epoch  85 Update  94300 Cost  0.581226706505 UD  0.921594556173 epson  1e-08 bad_counter 14
+Epoch  85 Update  94400 Cost  1.65894508362 UD  0.979296469688 epson  1e-08 bad_counter 14
+Epoch  85 Update  94500 Cost  2.26657915115 UD  0.96628215313 epson  1e-08 bad_counter 14
+Epoch  85 Update  94600 Cost  0.872299194336 UD  0.93186899821 epson  1e-08 bad_counter 14
+Epoch  85 Update  94700 Cost  2.03253388405 UD  0.952801966667 epson  1e-08 bad_counter 14
+Epoch  85 Update  94800 Cost  0.5852637887 UD  1.03023032347 epson  1e-08 bad_counter 14
+Epoch  85 Update  94900 Cost  2.04151344299 UD  0.948930839698 epson  1e-08 bad_counter 14
+Epoch  85 Update  95000 Cost  2.99111509323 UD  0.995907318592 epson  1e-08 bad_counter 14
+Saving... Done
+valid set decode done
+cost time ...  12.6776431004
+Valid WER: 22.97%, SACC: 39.55%
+Seen 8835 samples
+Epoch  86 Update  95100 Cost  1.61466145515 UD  1.06404442787 epson  1e-08 bad_counter 15
+Epoch  86 Update  95200 Cost  1.97414875031 UD  1.05189993779 epson  1e-08 bad_counter 15
+Epoch  86 Update  95300 Cost  0.706363201141 UD  0.972467446327 epson  1e-08 bad_counter 15
+Epoch  86 Update  95400 Cost  2.53326821327 UD  1.06656932036 epson  1e-08 bad_counter 15
+Epoch  86 Update  95500 Cost  1.05795264244 UD  1.00319184462 epson  1e-08 bad_counter 15
+Epoch  86 Update  95600 Cost  0.496001660824 UD  0.909237885475 epson  1e-08 bad_counter 15
+Epoch  86 Update  95700 Cost  1.84025526047 UD  0.989689095815 epson  1e-08 bad_counter 15
+Epoch  86 Update  95800 Cost  2.86818003654 UD  1.0309371074 epson  1e-08 bad_counter 15
+Epoch  86 Update  95900 Cost  0.463463544846 UD  0.864420624574 epson  1e-08 bad_counter 15
+Epoch  86 Update  96000 Cost  2.47170448303 UD  1.08963904381 epson  1e-08 bad_counter 15
+Epoch  86 Update  96100 Cost  0.861724734306 UD  1.09362285535 epson  1e-08 bad_counter 15
+Saving... Done
+valid set decode done
+cost time ...  12.6475311001
+Lr decay and retrain!
+Valid WER: 16.78%, SACC: 39.15%
+Seen 8835 samples
+Epoch  87 Update  96200 Cost  0.278884351254 UD  0.939920985699 epson  1e-09 bad_counter 0
+Epoch  87 Update  96300 Cost  0.854383826256 UD  1.00702393055 epson  1e-09 bad_counter 0
+Epoch  87 Update  96400 Cost  0.520064651966 UD  1.00902051926 epson  1e-09 bad_counter 0
+Epoch  87 Update  96500 Cost  1.86415052414 UD  0.919903496901 epson  1e-09 bad_counter 0
+Epoch  87 Update  96600 Cost  1.77905082703 UD  1.03855815331 epson  1e-09 bad_counter 0
+Epoch  87 Update  96700 Cost  2.02002167702 UD  1.00890656312 epson  1e-09 bad_counter 0
+Epoch  87 Update  96800 Cost  1.74549770355 UD  1.08250776927 epson  1e-09 bad_counter 0
+Epoch  87 Update  96900 Cost  0.266511201859 UD  1.00463937521 epson  1e-09 bad_counter 0
+Epoch  87 Update  97000 Cost  1.04605948925 UD  0.949564278126 epson  1e-09 bad_counter 0
+Epoch  87 Update  97100 Cost  1.91289663315 UD  1.03881238699 epson  1e-09 bad_counter 0
+Epoch  87 Update  97200 Cost  0.653269171715 UD  1.07850712935 epson  1e-09 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  12.6514987151
+Valid WER: 16.73%, SACC: 39.45%
+Seen 8835 samples
+Epoch  88 Update  97300 Cost  1.62876081467 UD  0.979562350114 epson  1e-09 bad_counter 1
+Epoch  88 Update  97400 Cost  1.27382469177 UD  1.07071401676 epson  1e-09 bad_counter 1
+Epoch  88 Update  97500 Cost  1.29226875305 UD  1.0694133242 epson  1e-09 bad_counter 1
+Epoch  88 Update  97600 Cost  2.02500486374 UD  0.921458081404 epson  1e-09 bad_counter 1
+Epoch  88 Update  97700 Cost  1.79081523418 UD  1.04634652138 epson  1e-09 bad_counter 1
+Epoch  88 Update  97800 Cost  0.214038282633 UD  1.03633628289 epson  1e-09 bad_counter 1
+Epoch  88 Update  97900 Cost  1.90972018242 UD  0.982361638546 epson  1e-09 bad_counter 1
+Epoch  88 Update  98000 Cost  0.723400533199 UD  1.01665841738 epson  1e-09 bad_counter 1
+Epoch  88 Update  98100 Cost  2.09900617599 UD  1.02297181288 epson  1e-09 bad_counter 1
+Epoch  88 Update  98200 Cost  1.33795523643 UD  0.986597092946 epson  1e-09 bad_counter 1
+Epoch  88 Update  98300 Cost  0.23169529438 UD  0.962445910772 epson  1e-09 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  12.7001920859
+Valid WER: 21.77%, SACC: 39.76%
+Seen 8835 samples
+Epoch  89 Update  98400 Cost  1.43877446651 UD  0.921280121803 epson  1e-09 bad_counter 2
+Epoch  89 Update  98500 Cost  0.960547506809 UD  1.03449808757 epson  1e-09 bad_counter 2
+Epoch  89 Update  98600 Cost  2.2794084549 UD  1.11767552694 epson  1e-09 bad_counter 2
+Epoch  89 Update  98700 Cost  1.5611884594 UD  1.09117389123 epson  1e-09 bad_counter 2
+Epoch  89 Update  98800 Cost  0.562693834305 UD  0.942156640689 epson  1e-09 bad_counter 2
+Epoch  89 Update  98900 Cost  0.481211602688 UD  0.982058517138 epson  1e-09 bad_counter 2
+Epoch  89 Update  99000 Cost  1.53365886211 UD  1.05429176887 epson  1e-09 bad_counter 2
+Epoch  89 Update  99100 Cost  2.40396404266 UD  0.943764177958 epson  1e-09 bad_counter 2
+Epoch  89 Update  99200 Cost  0.85411387682 UD  0.934823898474 epson  1e-09 bad_counter 2
+Epoch  89 Update  99300 Cost  2.19529700279 UD  0.945783722401 epson  1e-09 bad_counter 2
+Epoch  89 Update  99400 Cost  2.44923949242 UD  1.04233009815 epson  1e-09 bad_counter 2
+Saving... Done
+valid set decode done
+cost time ...  12.6612019817
+Valid WER: 20.80%, SACC: 39.35%
+Seen 8835 samples
+Epoch  90 Update  99500 Cost  0.722555100918 UD  1.07332907915 epson  1e-09 bad_counter 3
+Epoch  90 Update  99600 Cost  0.314337641001 UD  0.989116287231 epson  1e-09 bad_counter 3
+Epoch  90 Update  99700 Cost  0.735128998756 UD  1.02843832175 epson  1e-09 bad_counter 3
+Epoch  90 Update  99800 Cost  1.84574186802 UD  0.976228106022 epson  1e-09 bad_counter 3
+Epoch  90 Update  99900 Cost  0.495778977871 UD  0.990695647399 epson  1e-09 bad_counter 3
+Epoch  90 Update  100000 Cost  2.38241696358 UD  0.967572069168 epson  1e-09 bad_counter 3
+Epoch  90 Update  100100 Cost  2.21982502937 UD  1.02029809157 epson  1e-09 bad_counter 3
+Epoch  90 Update  100200 Cost  1.87011218071 UD  0.982009247939 epson  1e-09 bad_counter 3
+Epoch  90 Update  100300 Cost  1.08094263077 UD  0.962940645218 epson  1e-09 bad_counter 3
+Epoch  90 Update  100400 Cost  2.31598997116 UD  0.990573656559 epson  1e-09 bad_counter 3
+Epoch  90 Update  100500 Cost  0.458236038685 UD  0.997736545404 epson  1e-09 bad_counter 3
+Saving... Done
+valid set decode done
+cost time ...  12.6463255485
+Valid WER: 20.29%, SACC: 39.66%
+Seen 8835 samples
+Epoch  91 Update  100600 Cost  1.68365859985 UD  1.08619375626 epson  1e-09 bad_counter 4
+Epoch  91 Update  100700 Cost  0.963903963566 UD  1.03553506136 epson  1e-09 bad_counter 4
+Epoch  91 Update  100800 Cost  3.40897345543 UD  1.06372861862 epson  1e-09 bad_counter 4
+Epoch  91 Update  100900 Cost  1.08043086529 UD  0.97126215299 epson  1e-09 bad_counter 4
+Epoch  91 Update  101000 Cost  1.93256092072 UD  0.999329094092 epson  1e-09 bad_counter 4
+Epoch  91 Update  101100 Cost  0.399681717157 UD  1.00674430132 epson  1e-09 bad_counter 4
+Epoch  91 Update  101200 Cost  1.87258148193 UD  0.957306142648 epson  1e-09 bad_counter 4
+Epoch  91 Update  101300 Cost  0.386696785688 UD  1.05129483541 epson  1e-09 bad_counter 4
+Epoch  91 Update  101400 Cost  0.347110331059 UD  1.02812683582 epson  1e-09 bad_counter 4
+Epoch  91 Update  101500 Cost  1.93133926392 UD  0.962753033638 epson  1e-09 bad_counter 4
+Epoch  91 Update  101600 Cost  2.1047873497 UD  0.977093195915 epson  1e-09 bad_counter 4
+Saving... Done
+valid set decode done
+cost time ...  12.6946606159
+Valid WER: 16.46%, SACC: 39.76%
+Seen 8835 samples
+Epoch  92 Update  101700 Cost  1.42328500748 UD  1.01764549017 epson  1e-09 bad_counter 0
+Epoch  92 Update  101800 Cost  0.418522536755 UD  1.08280663093 epson  1e-09 bad_counter 0
+Epoch  92 Update  101900 Cost  0.527125239372 UD  1.06264483531 epson  1e-09 bad_counter 0
+Epoch  92 Update  102000 Cost  2.10445976257 UD  0.940688268344 epson  1e-09 bad_counter 0
+Epoch  92 Update  102100 Cost  1.63491249084 UD  1.04446472327 epson  1e-09 bad_counter 0
+Epoch  92 Update  102200 Cost  2.59678435326 UD  0.998128608863 epson  1e-09 bad_counter 0
+Epoch  92 Update  102300 Cost  2.23421216011 UD  0.932558846474 epson  1e-09 bad_counter 0
+Epoch  92 Update  102400 Cost  2.61565828323 UD  1.00425071716 epson  1e-09 bad_counter 0
+Epoch  92 Update  102500 Cost  1.31104779243 UD  1.00281817118 epson  1e-09 bad_counter 0
+Epoch  92 Update  102600 Cost  3.83518266678 UD  0.932927282651 epson  1e-09 bad_counter 0
+Epoch  92 Update  102700 Cost  3.40613055229 UD  1.01397022009 epson  1e-09 bad_counter 0
+Saving... Done
+valid set decode done
+cost time ...  12.7830802162
+Valid WER: 26.26%, SACC: 34.58%
+Seen 8835 samples
+Epoch  93 Update  102800 Cost  2.74209690094 UD  1.0435503761 epson  1e-09 bad_counter 1
+Epoch  93 Update  102900 Cost  1.9862293005 UD  1.07721503178 epson  1e-09 bad_counter 1
+Epoch  93 Update  103000 Cost  1.39692652225 UD  0.929854659239 epson  1e-09 bad_counter 1
+Epoch  93 Update  103100 Cost  2.0650935173 UD  1.06151447694 epson  1e-09 bad_counter 1
+Epoch  93 Update  103200 Cost  10.9692306519 UD  1.03167527119 epson  1e-09 bad_counter 1
+Epoch  93 Update  103300 Cost  1.42968297005 UD  1.02612934113 epson  1e-09 bad_counter 1
+Epoch  93 Update  103400 Cost  16.2947387695 UD  0.951269300779 epson  1e-09 bad_counter 1
+Epoch  93 Update  103500 Cost  0.903858602047 UD  0.89860727787 epson  1e-09 bad_counter 1
+Epoch  93 Update  103600 Cost  2.12063217163 UD  0.989723130067 epson  1e-09 bad_counter 1
+Epoch  93 Update  103700 Cost  1.87305545807 UD  1.00592140754 epson  1e-09 bad_counter 1
+Epoch  93 Update  103800 Cost  0.691704511642 UD  1.01106243134 epson  1e-09 bad_counter 1
+Saving... Done
+valid set decode done
+cost time ...  12.8405456463
+Valid WER: 33.05%, SACC: 25.35%
+Seen 8835 samples
+Epoch  94 Update  103900 Cost  0.996737957001 UD  1.06390904188 epson  1e-09 bad_counter 2
+Epoch  94 Update  104000 Cost  3.87679767609 UD  1.01044817368 epson  1e-09 bad_counter 2
+Epoch  94 Update  104100 Cost  33.2967376709 UD  0.980254205068 epson  1e-09 bad_counter 2
+Epoch  94 Update  104200 Cost  13.9991703033 UD  1.05196635326 epson  1e-09 bad_counter 2
+Epoch  94 Update  104300 Cost  141.519607544 UD  0.985804152489 epson  1e-09 bad_counter 2
+Epoch  94 Update  104400 Cost  90.183807373 UD  1.01517897844 epson  1e-09 bad_counter 2
+Epoch  94 Update  104500 Cost  33.44947052 UD  1.05007460117 epson  1e-09 bad_counter 2
+Epoch  94 Update  104600 Cost  0.394881129265 UD  1.04068402449 epson  1e-09 bad_counter 2
+Epoch  94 Update  104700 Cost  29.9879131317 UD  0.933321138223 epson  1e-09 bad_counter 2
+Epoch  94 Update  104800 Cost  2.57090759277 UD  0.987176672618 epson  1e-09 bad_counter 2
+Epoch  94 Update  104900 Cost  8.91653156281 UD  1.00723370314 epson  1e-09 bad_counter 2
+NaN detected
