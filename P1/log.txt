@@ -1,5 +1,0 @@
-nohup: ignoring input
-  File "./train_nmt.py", line 8
-    print params
-               ^
-SyntaxError: Missing parentheses in call to 'print'. Did you mean print(params)?
